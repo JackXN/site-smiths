@@ -1,6 +1,14 @@
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+
+  content: [
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
+    "./node_modules/flowbite/**/*.js"
+  ],
+ 
+
   theme: {
     extend: {
       colors: {
@@ -8,12 +16,26 @@ export default {
         secondary: '#E04C4C',
         paragraph: '#9D9D9D',
         title: '#0B0B0B',
-        
+  
       }
-
-
+  
+  
     },
   },
-  plugins: [],
+
+  fontFamily: {
+    poppins: ['Poppins'],
+    Lato: ['Lato']
+     
+  },
+
+  plugins: [require('@tailwindcss/aspect-ratio'),require('flowbite/plugin')],
 }
+
+
+
+
+
+
+
 
