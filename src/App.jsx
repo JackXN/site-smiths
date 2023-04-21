@@ -18,8 +18,9 @@ function App() {
     <>
     <Box fontFamily={'Gt'}>
     <Navbar/>
-    {/* <DesktopNav/> */}
-<h1 className='text-yellow-500'>DOES THIS WORK</h1>
+    <DesktopNav/>
+
+
 
     </Box>
     </>

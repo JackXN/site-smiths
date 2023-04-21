@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 
-
-
-
 /* Lobster Bebas Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
+/* Inter (Gt America Alternative */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
 
 
 /* Raleway (Gt-America Alternative */
