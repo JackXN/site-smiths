@@ -56,7 +56,7 @@ return (
           icon={<HamburgerIcon/>}
           aria-label="Toggle navigation"
           color="black"
-          background="blue.200"
+          background="none"
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.1)" }}
           onClick={() => setShow(!show)}
@@ -74,7 +74,7 @@ return (
         finalFocusRef={null}
       >
         <DrawerOverlay />
-        <DrawerContent bg='orange !important'>
+        <DrawerContent bg='brand.secondary'>
           <DrawerCloseButton />
           <DrawerBody
             display="flex"
@@ -82,7 +82,7 @@ return (
             fontSize={"35px"}
             padding={"30px"}
             margin={"30px"}
-            color="black"
+            color="brand.primary"
           >
             <Link activeClass="active"
               to="home"
