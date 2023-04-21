@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import {Box, Text} from '@chakra-ui/react';
 
+
+
+
+
+// Components
+import Navbar from './components/containers/Navbar/index';
+
+
 import './App.css'
 
 function App() {
@@ -8,9 +16,9 @@ function App() {
 
   return (
     <>
-     <Box bg={['orange', 'red']}>
-    <Text as='h1'>Test</Text>
-     </Box>
+    <Box>
+    <Navbar/>
+    </Box>
     </>
   )
 }
