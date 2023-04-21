@@ -13,11 +13,11 @@ import './App.css'
 
 function App() {
   
-
   return (
     <>
-    <Box>
+    <Box fontFamily={'Gt'}>
     <Navbar/>
+
     </Box>
     </>
   )

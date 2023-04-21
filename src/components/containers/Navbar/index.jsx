@@ -56,7 +56,7 @@ return (
         <IconButton
           icon={<HamburgerIcon/>}
           aria-label="Toggle navigation"
-          color="orange"
+          color="black"
           background="blue.200"
           transition="all 0.3s ease-in-out"
           _hover={{ transform: "scale(1.1)" }}
