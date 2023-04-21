@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {
     Box,
     Flex,
-  
     Text,
     IconButton,
     useDisclosure,
@@ -49,7 +48,7 @@ return (
       right={0}
       left={0}
       zIndex={4}
-      display={["flex", "flex", "flex", "flex", "flex", "none"]}
+      display={["flex", "flex", "flex", "flex", "flex", "flex", 'flex']}
     >
       <Box display={{ sm: "block", md: "none" }} onClick={onOpen}>
       

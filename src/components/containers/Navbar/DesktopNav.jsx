@@ -31,13 +31,13 @@ const DesktopNav = () => {
 
 <Flex sx={styles.rightContainer} >
     <List display='flex'>
-        <ListItem mr='20px'>Home</ListItem>
-        <ListItem mr='20px'>About</ListItem>
-        <ListItem mr='20px'>Services</ListItem>
-        <ListItem mr='20px'>Contact</ListItem>
-        <ListItem mr='20px'>Gallery</ListItem>
-        <ListItem mr='20px'>FAQ</ListItem>
-        <ListItem><span>Get A Quote</span></ListItem>
+        <ListItem mr='20px' padding='10px 8px'>Home</ListItem>
+        <ListItem mr='20px' padding='10px 8px'>About</ListItem>
+        <ListItem mr='20px' padding='10px 8px'>Services</ListItem>
+        <ListItem mr='20px' padding='10px 8px'>Contact</ListItem>
+        <ListItem mr='20px' padding='10px 8px'>Gallery</ListItem>
+        <ListItem mr='20px' padding='10px 8px'>FAQ</ListItem>
+        <ListItem><Text bg='brand.secondary' color='#ffff' padding='10px 8px' >Get A Quote</Text></ListItem>
         
     </List>
 </Flex>

@@ -1,6 +1,6 @@
 const styles = {
     container: {
-        
+        display: ['none', 'none','none','flex'],
         fontWeight: 'bold',
     },
 
