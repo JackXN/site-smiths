@@ -13,8 +13,16 @@ colors: {
     primary: '#EDF2F7',
     secondary: '#E04C4C',
     paragraph: '#9D9D9D',
-    title: '#0B0B0B'
+    title: '#0B0B0B',
   }
+},
+
+fonts: {
+  text: {
+    title: 'Lobster'
+  }
+  
+
 }
 
 })

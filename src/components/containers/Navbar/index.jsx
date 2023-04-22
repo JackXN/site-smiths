@@ -10,7 +10,8 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    useColorMode
+    useColorMode,
+    Image,
   } from "@chakra-ui/react";
 
 
@@ -23,10 +24,7 @@ const Navbar = () => {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const {colorMode, toggleColorMode} = useColorMode();
     const [show,setShow] = useState(null);
-
     // const router = useRouter();
-
-
     const Link = Scroll.Link;
 
 
@@ -43,15 +41,14 @@ return (
       color="white"
       // position="absolute"
       position='relative'
-      
+  
       top={90}
       right={0}
       left={0}
       zIndex={4}
-      display={["flex", "flex", "flex", "flex", "flex", "flex", 'flex']}
+      display={["flex", "flex", "flex", "flex", "flex", 'none']}
     >
-      <Box display={{ sm: "block", md: "none" }} onClick={onOpen}>
-      
+      <Box display={{ sm: "block",lg:' none' }} onClick={onOpen}>
         <IconButton
           icon={<HamburgerIcon/>}
           aria-label="Toggle navigation"
@@ -66,7 +63,20 @@ return (
           bottom ='50px'
         />
       </Box>
+      <Box display={{ sm: "block",lg:' none' }} flexDirection='column' justifyContent='center' alignItems='center'>
+      <Image src='/src/Logo.png' />
+      <Text as='h3' color='brand.title' fontFamily='Lobster' >Site Smiths</Text>
+      </Box>
 
+
+
+
+
+
+
+
+
+      {/* DRAWER */}
       <Drawer
         isOpen={isOpen}
         placement="right"
