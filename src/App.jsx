@@ -16,13 +16,15 @@ function App() {
   
   return (
     <>
-    <Box fontFamily={'Gt'}>
+    <Box>
     <Navbar/>
     <DesktopNav/>
     <Hero/>
+    <a href="https://www.google.com/" className='text-red-400'>Go to Google</a>
 
 
     </Box>
+    
     </>
   )
 }

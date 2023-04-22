@@ -12,7 +12,7 @@ const index = () => {
   return (
 <Box sx={styles.container}>
 <Text as='h1'>
-{hero[0].title}
+Crafting Beautiful <br/> Websites That Inspire <br/> & Convert
 </Text>
 </Box>
   )

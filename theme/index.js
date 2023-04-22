@@ -9,7 +9,10 @@ const breakpoints = [
     '1220px',
     '1366px',
     '1620px',]
-    
+
+
+
+
 
     
     const customTheme = extendTheme({breakpoints})
