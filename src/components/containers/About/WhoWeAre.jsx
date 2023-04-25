@@ -131,13 +131,13 @@ const styles = {
     }
   },
 
-  // buttonContainer: {
-  //   justifyContent: 'left',
-  //   alignSelf: 'left',
-  //   display: 'flex',
-  //   mt: ['40px'],
-  //   fontSize: ['30px']
-  // }
+  buttonContainer: {
+    justifyContent: 'left',
+    alignSelf: 'left',
+    display: 'flex',
+    mt: ['40px'],
+    fontSize: ['30px']
+  }
 
 
 
