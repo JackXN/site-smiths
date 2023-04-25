@@ -24,7 +24,7 @@ function App() {
     <Hero/>
     <About/>
     {/* <Anim/> */}
-    <a href="https://www.google.com/" className='text-red-400'>Go to Google</a>
+    
 
 
     </Box>
