@@ -1,12 +1,13 @@
 const styles = {
     container: {
-        height: '100vh',
+        height: '100%',
         display: 'flex',
         flexDirection:' column',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
         top: '125px',
+        // background: 'red !important'
         
 
 
