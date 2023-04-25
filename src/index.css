@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+
+
+ /* Roboto Medium Italic */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
 /* Lobster Bebas Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
 
