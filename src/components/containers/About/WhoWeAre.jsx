@@ -7,7 +7,7 @@ import {
     Button,
   } from '@chakra-ui/react';
 import Logo from '/src/smallLogo.png';
-import About from '../../../constants/index';
+// import About from '../../../constants/index';
 
 
 const WhoWeAre = () => {
