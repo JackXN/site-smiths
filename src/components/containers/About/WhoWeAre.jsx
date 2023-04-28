@@ -4,8 +4,10 @@ import {
     Text,
     Image,
     IconButton,
-    Button,
   } from '@chakra-ui/react';
+
+
+  import Btn from '../../Button';
 import Logo from '/src/smallLogo.png';
 // import About from '../../../constants/index';
 
@@ -49,15 +51,7 @@ We possess a winning combination of creative, technical and people skills that n
 
 
 <Box sx={styles.buttonContainer}>
-<Button 
-bg='#E04C4C' 
-color='#ffff'
-borderRadius='0'
-fontFamily='inter'
-fontSize='20px'
-padding='25px 25px'
-
->Read More</Button>
+<Btn text='Read This'></Btn>
 </Box>
       </Box>
     </Box>
