@@ -4,7 +4,8 @@ import {
     Box,
     Text,
     Image,
-    Icon
+    Icon,
+    Button
 } from '@chakra-ui/react';
 import Tilt from 'react-parallax-tilt';
 
@@ -75,20 +76,7 @@ const WhatWeDo = () => {
 
       <Box sx={styles.showcaseContainer}>
 <Box sx={styles.leftContainer}>
-  
-    <figure className='overflow-y-auto h-[550px] w-full lg:max-w-lg mx-auto relative no-scrollbar header-img'
-    style={{
-      transform: 'rotateX(20deg)', 
-      boxShadow: '4px 8px 24px rgba(0,0,0,.3)',
-      borderRadius: '20px',
-      transition: '.24s'
-    }}
-    
-    >
-  <Image src='/src/showcaseImage.png' alt='project Showcase'  transform= {[null,'skew(6deg,5deg)']} borderRadius='20px'/>
-  </figure>
-  
-</Box>
+
 
 
 <Box sx={styles.rightContainer}>
@@ -99,6 +87,46 @@ With a professional
 Online presence</h1>
   </Box>
 </Box>
+
+
+<Box sx={styles.infoContainer}>
+    <Text as='p'>
+Looking to take your business to the next level? Consider leveraging the power of a professional online service. With the right partner, you can optimize your digital presence, streamline your operations, and connect with customers like never before. Whether youre a startup looking to establish a foothold or an established business seeking to expand, theres never been a better time to elevate your brand and grow your bottom line with a professional online service. So what are you waiting for? Explore your options today and take your business to new heights!
+    </Text>
+
+
+    <Box sx={styles.buttonContainer}>
+<Button 
+bg='#E04C4C' 
+color='#ffff'
+borderRadius='0'
+fontFamily='inter'
+fontSize='20px'
+padding='25px 25px'
+
+>Read More</Button>
+</Box>
+  </Box>
+
+
+
+  
+    <figure className='overflow-y-auto h-[550px] w-full lg:max-w-lg mx-auto relative no-scrollbar header-img'
+    style={{
+      transform: 'rotateX(20deg)', 
+      boxShadow: '4px 8px 24px rgba(0,0,0,.3)',
+      borderRadius: '20px',
+      transition: '.24s'
+    }}
+  
+    >
+  <Image src='/src/showcaseImage.png' alt='project Showcase'  transform= {[null,'skew(6deg,5deg)']} borderRadius='20px'/>
+  </figure>
+
+
+</Box>
+
+
       </Box>
     </Box>
   )
@@ -167,16 +195,42 @@ const styles = {
 
 
 
+
+
+
+  
+
+
   showcaseContainer: {
     mt: ['150px'],
     display: 'flex',
-    flexDirection: ['column-reverse'],
+    // flexDirection: ['column-reverse'],
+    flexDirection: ['column']
+
   },
 
   leftContainer: {
     position: 'relative',
     top: ['150px']
         },
-}
+
+
+        infoContainer: {
+          
+
+          p: {
+            mt: ['30px'],
+      textAlign: 'left',
+      fontSize: ['20px']
+          },
+
+          buttonContainer: {
+          justifyContent: 'left',
+          alignSelf: 'left',
+          display: 'flex',
+          mt: ['40px'],
+          fontSize: ['30px']        }
+        }
+        }
 
 export default WhatWeDo
