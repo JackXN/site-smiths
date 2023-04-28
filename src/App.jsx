@@ -10,7 +10,7 @@ import Navbar from './components/containers/Navbar/index';
 import DesktopNav from './components/containers/Navbar/DesktopNav';
 import Hero from './components/containers/Hero/index';
 import About from './components/containers/About/index'
-
+import Stepper from './components/Stepper';
 
 import './App.css'
 
@@ -23,6 +23,7 @@ function App() {
     <DesktopNav/>
     <Hero/>
     <About/>
+    <Stepper/>
 
     
 

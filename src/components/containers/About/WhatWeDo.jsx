@@ -115,7 +115,7 @@ Looking to take your business to the next level? Consider leveraging the power o
     }}
   
     >
-  <Image src='/src/showcaseImage.png' alt='project Showcase'  transform= {[null,'skew(6deg,5deg)']} borderRadius='20px'/>
+  <Image src='/src/showcaseImage.png' alt='project Showcase'   borderRadius='20px'/>
   </figure>
 
 <Box
