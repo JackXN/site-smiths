@@ -6,7 +6,7 @@ import {
     Image,
     Icon
 } from '@chakra-ui/react';
-
+import Tilt from 'react-parallax-tilt';
 
 
 import { SiAltiumdesigner as DesignIcon} from 'react-icons/si';
@@ -69,9 +69,36 @@ const WhatWeDo = () => {
          </Text>
           </Box>
       ))}
-      
+      </Box>
 
 
+
+      <Box sx={styles.showcaseContainer}>
+<Box sx={styles.leftContainer}>
+  
+    <figure className='overflow-y-auto h-[550px] w-full lg:max-w-lg mx-auto relative no-scrollbar header-img'
+    style={{
+      transform: 'rotateX(20deg)', 
+      boxShadow: '4px 8px 24px rgba(0,0,0,.3)',
+      borderRadius: '20px',
+      transition: '.24s'
+    }}
+    
+    >
+  <Image src='/src/showcaseImage.png' alt='project Showcase'  transform= {[null,'skew(6deg,5deg)']} borderRadius='20px'/>
+  </figure>
+  
+</Box>
+
+
+<Box sx={styles.rightContainer}>
+  <Box sx={styles.header}>
+<hr/>
+    <h1>Elevate Your business
+With a professional
+Online presence</h1>
+  </Box>
+</Box>
       </Box>
     </Box>
   )
@@ -83,7 +110,7 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: ['column'],
-
+    justifyContent: 'center',
   },
 
   header: {
@@ -136,7 +163,20 @@ const styles = {
       margin: ['50px']
       
     }
-  }
+  },
+
+
+
+  showcaseContainer: {
+    mt: ['150px'],
+    display: 'flex',
+    flexDirection: ['column-reverse'],
+  },
+
+  leftContainer: {
+    position: 'relative',
+    top: ['150px']
+        },
 }
 
 export default WhatWeDo
