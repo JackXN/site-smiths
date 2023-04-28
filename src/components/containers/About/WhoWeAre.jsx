@@ -32,6 +32,7 @@ const WhoWeAre = () => {
         fontFamily='Roboto'
         fontStyle='italic'
         fontWeight='400'
+        
         >
           We Design
         </Text>
@@ -51,13 +52,13 @@ We possess a winning combination of creative, technical and people skills that n
 
 
 <Box sx={styles.buttonContainer}>
-<Btn text='Read This'></Btn>
+<Btn text='Read More'/>
 </Box>
       </Box>
     </Box>
         </Box>
   )
-}
+} 
 
 
 
@@ -92,7 +93,6 @@ const styles = {
 
 
   rightContainer: {
-
    
   },
 
@@ -102,7 +102,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    pt: ['30px'],
+    // pt: ['30px'],
     
 
 
@@ -130,6 +130,7 @@ const styles = {
     alignSelf: 'left',
     display: 'flex',
     mt: ['40px'],
+    mb: ['80px'],
     fontSize: ['30px']
   }
 

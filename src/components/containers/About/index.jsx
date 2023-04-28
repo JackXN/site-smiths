@@ -6,11 +6,13 @@ import {
 } from '@chakra-ui/react';
 import styles from './styles';
 import WhoWeAre from './WhoWeAre';
+import WhatWeDo from './WhatWeDo';
 
 const index = () => {
   return (
     <Box sx={styles.container}>
 <WhoWeAre/>
+<WhatWeDo/>
     </Box>
   )
 }
