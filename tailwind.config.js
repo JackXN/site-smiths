@@ -4,7 +4,15 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   
   theme: {
-    extend: {},
+    
+    extend: {
+fontFamily: {
+  'Mont': ['Montserrat'],
+  'Bebas': ['Bebas Neue, cursive'],
+}
+
+
+    },
   },
   variants: {
     extend: {},
