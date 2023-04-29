@@ -8,7 +8,7 @@ import {
 
 
   import Btn from '../../Button';
-import Logo from '/src/smallLogo.png';
+import Logo from '/smallLogo.png';
 // import About from '../../../constants/index';
 
 
@@ -24,15 +24,11 @@ const WhoWeAre = () => {
 
     <Box sx={styles.rightContainer}>
       <Box sx={styles.contentContainer}>
-
-
-        
       <Box sx={styles.titleContainer}>
         <Text as='h2'
         fontFamily='Roboto'
         fontStyle='italic'
         fontWeight='400'
-        
         >
           We Design
         </Text>

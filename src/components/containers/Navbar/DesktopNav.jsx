@@ -13,7 +13,7 @@ import {
   Spacer
 } from "@chakra-ui/react";
 
-import Logo from '/src/Logo.png';
+import Logo from '/Logo.png';
 
 
 const DesktopNav = () => {

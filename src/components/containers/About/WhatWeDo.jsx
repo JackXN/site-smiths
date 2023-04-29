@@ -115,7 +115,7 @@ Looking to take your business to the next level? Consider leveraging the power o
     }}
   
     >
-  <Image src='/src/showcaseImage.png' alt='project Showcase'   borderRadius='20px'/>
+  <Image src='/showcaseImage.png' alt='project Showcase'   borderRadius='20px'/>
   </figure>
 
 <Box
@@ -162,7 +162,7 @@ const styles = {
     },
 
     h1: {
-      fontFamily: 'Bebas Neue, cursive',
+      fontFamily: 'Bebas Neue',
       textAlign: 'left',
       lineHeight: ['60px'],
       fontSize: ['73px'],

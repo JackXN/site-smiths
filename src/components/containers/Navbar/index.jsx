@@ -64,7 +64,7 @@ return (
         />
       </Box>
       <Box display={{ sm: "block",lg:' none' }} flexDirection='column' justifyContent='center' alignItems='center'>
-      <Image src='/src/Logo.png' />
+      <Image src='/Logo.png' />
       <Text as='h3' color='brand.title' fontFamily='Lobster' >Site Smiths</Text>
       </Box>
 
