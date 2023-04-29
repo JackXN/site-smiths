@@ -146,6 +146,7 @@ const styles = {
     display: 'flex',
     flexDirection: ['column'],
     justifyContent: 'center',
+    mb: ['500px'],
   },
 
   header: {

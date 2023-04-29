@@ -12,6 +12,7 @@ import Hero from './components/containers/Hero/index';
 import About from './components/containers/About/index'
 import Stepper from './components/Stepper';
 import CyberSec from './components/containers/CyberSec/HomeSection';
+import Testimonials from './components/Testimonials';
 import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <About/>
     <Stepper/>
     <CyberSec/>
+    <Testimonials/>
 
     
 

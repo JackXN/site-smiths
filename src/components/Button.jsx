@@ -5,15 +5,17 @@ import {
 
 
 
-const Btn = (props, color) => {
+const Btn = (props, color,margin, padding) => {
   return (
     <Button 
     bg={props.color ? props.color : '#EF4444'} 
-    borderRadius='0'
-    fontFamily='inter'
-    fontSize='20px'
-    padding='25px 25px'
+    borderRadius='5'
+    fontFamily='Montserrat'
+    fontSize={['20px', '24px']}
+
+    padding={props.padding ? props.padding : '25px 25px'}
     color='#ffff'
+    mb={props.margin}
    >
     {props.text}
     </Button>

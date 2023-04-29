@@ -23,7 +23,7 @@ const HomeSection = () => {
 
             
         </Box>
-        <Btn text='See Our Cyber-Sec Policy'  mb='180px'/>
+        <Btn text='See Our Cyber-Sec Policy'  mb='180px' padding='30px'/>
 
 
         <Box sx={styles.rightContainer} mt={['30px']}>
@@ -44,6 +44,8 @@ const styles = {
         alignItems: 'center',
         flexDirection: ['column'],
         height: '100vh',
+        mt: ['200px'],
+        
         
     },
 
@@ -55,8 +57,9 @@ const styles = {
 
         h1: {
             fontFamily: 'Bebas Neue',
-            fontWeight: 'bold',
-            fontSize: ['53px'],
+            textAlign: 'center',
+            lineHeight: ['60px'],
+            fontSize: ['73px'],
             mb: ['40px']
             
         },
