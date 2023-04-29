@@ -19,17 +19,20 @@ const styles = {
             fontWeight: '900',
             textTransform: 'uppercase',
             letterSpacing: '-2px',
-            // position: 'relative',
-            // bottom: [null, null, null, null, '150px'],
-            lineHeight: ['60px']
+            position: 'relative',
+            bottom: ['50px'],
+            lineHeight: ['60px'],
+
         },
 
         h2: {
             fontFamily: 'Lobster',
-            bottom: [null, null, null, null, '150px'],
-            // position: 'relative',
-            fontSize: ['16px', '16px', '16px', '20px'],
-            mt: ['25px']
+            bottom: ['35px'],
+            position: 'relative',
+            fontSize: ['24px', '16px', '16px', '20px'],
+            fontWeight: 'bold',
+            color: 'darkgray'
+        
             
         }
 

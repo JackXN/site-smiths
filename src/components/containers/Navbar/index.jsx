@@ -63,9 +63,9 @@ return (
           bottom ='50px'
         />
       </Box>
-      <Box display={{ sm: "block",lg:' none' }} flexDirection='column' justifyContent='center' alignItems='center'>
+      <Box display='flex'  flexDirection='column' justifyContent='center' alignItems='center' position='relative' left='20px' bottom='50px'>
       <Image src='/Logo.png' />
-      <Text as='h3' color='brand.title' fontFamily='Lobster' >Site Smiths</Text>
+      <Text as='h3' color='brand.title' fontFamily='Lobster'  fontSize='20px'>Site Smiths</Text>
       </Box>
 
 
