@@ -1,14 +1,10 @@
 import { Box, Badge, Heading, Text, Link, Icon } from "@chakra-ui/react";
 import { FiDownload } from "react-icons/fi";
-
+import Headline from "./Headline";
 function Stepper() {
   return (
     <Box pt={['250px']}>
-
-<Text as='h1'>
-  Working With<br/>
-  Us Is Simple
-</Text>
+<Headline/>
 
 
 <section className="max-w-5xl py-40 mx-auto">

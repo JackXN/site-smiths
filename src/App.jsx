@@ -11,7 +11,7 @@ import DesktopNav from './components/containers/Navbar/DesktopNav';
 import Hero from './components/containers/Hero/index';
 import About from './components/containers/About/index'
 import Stepper from './components/Stepper';
-
+import CyberSec from './components/containers/CyberSec/HomeSection';
 import './App.css'
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
     <Hero/>
     <About/>
     <Stepper/>
+    <CyberSec/>
 
     
 

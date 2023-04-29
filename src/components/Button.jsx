@@ -5,10 +5,10 @@ import {
 
 
 
-const Btn = (props) => {
+const Btn = (props, color) => {
   return (
     <Button 
-    bg='#E04C4C' 
+    bg={props.color ? props.color : '#EF4444'} 
     borderRadius='0'
     fontFamily='inter'
     fontSize='20px'
