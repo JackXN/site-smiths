@@ -1,8 +1,37 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Lobster Bebas Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* Inter (Gt America Alternative */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+
+/* Raleway (Gt-America Alternative */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+
+
+@font-face {
+  font-family: 'Gt';
+  font-style: normal;
+src: url('/fonts/GT-America-Compressed-Black.woff2') format('woff2');
+}
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+ padding: 0 !important;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -12,11 +41,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: red !important;
   text-decoration: inherit;
 }
 a:hover {
@@ -29,6 +58,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: #EDF2F7 !important;
+  
 }
 
 h1 {
@@ -58,7 +89,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #EDF2F7;
   }
   a:hover {
     color: #747bff;
