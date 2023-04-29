@@ -8,7 +8,7 @@ module.exports = {
     extend: {
 fontFamily: {
   'Mont': ['Montserrat'],
-  'Bebas': ['Bebas Neue, cursive'],
+  'Bebas': ['Bebas Neue'],
 }
 
 
