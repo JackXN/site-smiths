@@ -258,7 +258,7 @@ const styles = {
     },
 
     h1: {
-      fontFamily: 'Bebas Neue',
+      fontFamily: 'Bangers',
       textAlign: 'left',
       lineHeight: ['38px'],
       fontSize: ['44px'],

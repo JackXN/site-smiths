@@ -15,12 +15,11 @@ const styles = {
 
         h1: {
             fontFamily: 'Bangers',
-            fontSize: ['48px', '48px','46px', '53px'],
-            fontWeight: 'bold',
-            textTransform: 'uppercase',
-            letterSpacing: '1.5px',
+            fontSize: ['53px', '48px','46px', '53px'],
+            // textTransform: 'uppercase',
+            letterSpacing: '4px',
             position: 'relative',
-         
+         fontWeight: 'lighter',
             // bottom: ['25px'],
             lineHeight: ['55px'],
 

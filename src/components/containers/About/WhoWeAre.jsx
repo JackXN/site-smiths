@@ -72,10 +72,11 @@ const styles = {
     flexDirection: 'column',
 
     h1: {
-      fontFamily: 'Bebas Neue, cursive',
+      fontFamily: 'Bangers',
       textAlign: 'left',
       lineHeight: ['30px'],
-      fontSize: ['44px']
+      fontSize: ['44px'],
+      fontWeight: 'lighter'
     },
 
     hr: {

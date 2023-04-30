@@ -58,8 +58,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: #EDF2F7 !important;
-  
+  /* background: #EDF2F7 !important; */
+  background-color: orange;
 }
 
 h1 {
