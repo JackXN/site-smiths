@@ -42,7 +42,7 @@ return (
       // bg='orange'
       color="white"
       // position="absolute"
-      position='relative'
+      position='sticky'
   
       top={90}
       right={0}
