@@ -13,13 +13,15 @@ const index = () => {
   return (
 <Box sx={styles.container}>
 <Text as='h1'>
-Crafting Beautiful <br/> Websites That Inspire <br/> & Convert
+Crafting Beautiful <br/> Websites That <span className='p-2 text-white bg-red-500'>Inspire</span> <br/> & Convert
 </Text>
-<Text as='h2'>{hero[1].title}</Text>
+{/* <Text as='h2'>{hero[1].title}</Text> */}
 
 <Box sx={styles.heroImage}>
-  <Image src={AnvilLogo} alt='Site-Smiths-Anvil-Logo' height='90%' width='90%'/>
+  <Image src={AnvilLogo} alt='Site-Smiths-Anvil-Logo' />
+  
 </Box>
+<Text as='h2'>{hero[1].title}</Text>
 </Box>
   )
 }

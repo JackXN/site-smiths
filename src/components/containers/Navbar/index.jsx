@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
     Box,
     Flex,
@@ -18,39 +18,76 @@ import {
 
 
 import {HamburgerIcon} from '@chakra-ui/icons';
-
 import * as Scroll from 'react-scroll';
+
+
+
 
 
 const Navbar = () => {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const {colorMode, toggleColorMode} = useColorMode();
     const [show,setShow] = useState(null);
+    const [scrollPos, setScrollPos] = useState(0);
+    const [bgColor, setBgColor] = useState(null);
+    const [logoColor, setLogoColor] = useState('/Logo.png')
+
+    // OnScroll Function
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollPos(window.pageYOffset);
+      }
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }, []);
+
+
+    // On scroll also needs to change logo color
+   useEffect(() => {
+    if(scrollPos > 0) {
+      setBgColor('#E04C4C')
+      setLogoColor('/LogoWhite.png')
+    } else {
+      setBgColor(null)
+      setLogoColor('/Logo.png')
+    }
+   }, [scrollPos])
+
+
+
+
+
     // const router = useRouter();
     const Link = Scroll.Link;
 
 
 return (
+  // <Box bg={bgColor} display='flex' justifyContent='center' alignItems='center' mt={['25px']}  position='sticky'>
     <Flex
       as="nav"
-      align="center"
-      justify="space-between"
-      
+      alignItems="center"
+      justifyContent="center"
       wrap="wrap"
       // padding="1.5rem"
       // bg={colorMode === "light" ? "transparent" : "teal.500"}
-      // bg='orange'
+      bg={bgColor}
+      padding='20px'
+      borderRadius='20px'
       color="white"
       // position="absolute"
       position='sticky'
-  
+      transition="background-color 0.5s ease-out"
       top={90}
       right={0}
       left={0}
       zIndex={4}
       display={["flex", "flex", "flex", "flex", "flex", 'none']}
     >
-      <Box display={{ sm: "block",lg:' none' }} onClick={onOpen}>
+      <Box display={{ sm: "block",lg:' none' }} onClick={onOpen} >
         <IconButton
           icon={<HamburgerIcon/>}
           aria-label="Toggle navigation"
@@ -62,22 +99,14 @@ return (
           fontSize="25px"
           mt="20px"
           position='relative'
-          bottom ='50px'
+          bottom={['10px']}
         />
       </Box>
-      <Box display='flex'  flexDirection='row' justifyContent='center' alignItems='center' position='relative' left='20px' bottom='50px'>
+      <Box display='flex'  flexDirection='row' justifyContent='center' alignItems='center' position='relative'  >
         {/* <Text as='h1' fontFamily='Bangers' color='black'>ITE <br/> SMITHS</Text> */}
-     <Image src='/Logo.png' alt='Something' height='50%' width='50%' alignSelf='center' position='relative' right={['25px']}/>
+     <Image src={logoColor} transition='src 0.5s ease-in'alt='Something' height='50%' width='50%' alignSelf='center' position='relative' right={['25px']}/>
      
       </Box>
-
-
-
-
-
-
-
-
 
       {/* DRAWER */}
       <Drawer
@@ -179,6 +208,7 @@ return (
         />
       </Box>
     </Flex>
+    // </Box>
 )
 
 
