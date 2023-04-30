@@ -15,24 +15,25 @@ const styles = {
 
         h1: {
             fontFamily: 'Bangers',
-            fontSize: ['36px', '36px','46px', '53px'],
+            fontSize: ['48px', '48px','46px', '53px'],
             fontWeight: 'lighter',
             textTransform: 'uppercase',
             // letterSpacing: '-2px',
             position: 'relative',
          
-            bottom: ['25px'],
-            lineHeight: ['43px'],
+            // bottom: ['25px'],
+            lineHeight: ['59px'],
 
         },
 
         h2: {
             fontFamily: 'Lobster',
-            bottom: ['8px'],
+        top: ['40px'],
             position: 'relative',
-            fontSize: ['16px', '16px', '16px', '20px'],
+            fontSize: ['22px', '22px', '16px', '20px'],
             // fontWeight: 'bold',
-            color: '#313638'
+            color: '#313638',
+            mb: ['85px'],
         
             
         }
