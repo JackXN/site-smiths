@@ -14,20 +14,20 @@ const styles = {
 
 
         h1: {
-            fontFamily: 'Kanit',
+            fontFamily: 'Bangers',
             fontSize: ['48px', '48px','46px', '53px'],
             fontWeight: 'bold',
             textTransform: 'uppercase',
-            // letterSpacing: '-2px',
+            letterSpacing: '1.5px',
             position: 'relative',
          
             // bottom: ['25px'],
-            lineHeight: ['59px'],
+            lineHeight: ['55px'],
 
         },
 
         h2: {
-            fontFamily: 'Merriweather, cursive',
+            fontFamily: 'Lobster, cursive',
         top: ['40px'],
             position: 'relative',
             fontSize: ['22px', '22px', '16px', '20px'],
