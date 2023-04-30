@@ -119,7 +119,7 @@ const styles = {
       mt: ['30px'],
       textAlign: 'left',
       fontSize: ['14px'],
-      fontFamily: 'Montserrat',
+      fontFamily: 'Merriweather',
       fontWeight: 'Medium'
     }
   },

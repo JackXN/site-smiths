@@ -221,7 +221,7 @@ alignItems='center'
 justifyContent='center'
 mt={['64px']}
 fontSize='14px'
-fontFamily='Montserrat'
+fontFamily='Merriweather'
 fontWeight='medium'
 >
 <Text as='p' mr='10px'><Link href='/Gallery'>Check Out Some Of Our Work </Link></Text>
@@ -331,7 +331,7 @@ fontSize: ['14px']
             mb: '40px',
       textAlign: 'left',
       fontSize: ['14px'],
-      fontFamily: 'Montserrat',
+      fontFamily: 'Merriweather',
       fontWeight: 'medium',
           },
 

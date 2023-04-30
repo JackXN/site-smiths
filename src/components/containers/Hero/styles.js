@@ -14,9 +14,9 @@ const styles = {
 
 
         h1: {
-            fontFamily: 'Bangers',
+            fontFamily: 'Kanit',
             fontSize: ['48px', '48px','46px', '53px'],
-            fontWeight: 'lighter',
+            fontWeight: 'bold',
             textTransform: 'uppercase',
             // letterSpacing: '-2px',
             position: 'relative',
@@ -27,11 +27,11 @@ const styles = {
         },
 
         h2: {
-            fontFamily: 'Lobster',
+            fontFamily: 'Merriweather, cursive',
         top: ['40px'],
             position: 'relative',
             fontSize: ['22px', '22px', '16px', '20px'],
-            // fontWeight: 'bold',
+            fontWeight: 'bold',
             color: '#313638',
             mb: ['85px'],
         
