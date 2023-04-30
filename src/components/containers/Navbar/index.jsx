@@ -14,6 +14,8 @@ import {
     Image,
   } from "@chakra-ui/react";
 
+  import MySvg from '../../MySvg';
+
 
 import {HamburgerIcon} from '@chakra-ui/icons';
 
@@ -63,9 +65,10 @@ return (
           bottom ='50px'
         />
       </Box>
-      <Box display='flex'  flexDirection='column' justifyContent='center' alignItems='center' position='relative' left='20px' bottom='50px'>
-      <Image src='/Logo.png' />
-      <Text as='h3' color='brand.title' fontFamily='Lobster'  fontSize='20px'>Site Smiths</Text>
+      <Box display='flex'  flexDirection='row' justifyContent='center' alignItems='center' position='relative' left='20px' bottom='50px'>
+        {/* <Text as='h1' fontFamily='Bangers' color='black'>ITE <br/> SMITHS</Text> */}
+     <Image src='/Logo.png' alt='Something' height='50%' width='50%' alignSelf='center' position='relative' right={['25px']}/>
+     
       </Box>
 
 
