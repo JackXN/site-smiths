@@ -17,7 +17,7 @@ const WhoWeAre = () => {
     <Box sx={styles.container}>
     <Box sx={styles.leftContainer}>
       <hr/>
-    <Text as='h1' fontSize='50px' color='black'>Who <br/> We Are <IconButton icon={<Image src={Logo} />} bg='none' /></Text>
+    <Text as='h1' color='black'>Who <br/> We Are <IconButton icon={<Image src={Logo} />} bg='none' /></Text>
   
     </Box>
 
@@ -34,6 +34,7 @@ const WhoWeAre = () => {
         </Text>
         <Text as='h2'
         fontFamily='Lobster, cursive'
+        lineHeight='40px'
         >
           Beautiful User Experience
         </Text>
@@ -48,7 +49,7 @@ We possess a winning combination of creative, technical and people skills that n
 
 
 <Box sx={styles.buttonContainer}>
-<Btn text='Read More'/>
+<Btn text='Read More' />
 </Box>
       </Box>
     </Box>
@@ -73,8 +74,8 @@ const styles = {
     h1: {
       fontFamily: 'Bebas Neue, cursive',
       textAlign: 'left',
-      lineHeight: ['60px'],
-      fontSize: ['73px'],
+      lineHeight: ['30px'],
+      fontSize: ['44px']
     },
 
     hr: {
@@ -104,9 +105,9 @@ const styles = {
 
 
     h2: {
-      fontSize: ['38px'],
+      fontSize: ['29px'],
       textAlign: 'left !important',
-      lineHeight: ['40px'],
+      lineHeight: ['35px'],
       
     }
 
@@ -117,7 +118,9 @@ const styles = {
     p: {
       mt: ['30px'],
       textAlign: 'left',
-      fontSize: ['20px']
+      fontSize: ['14px'],
+      fontFamily: 'Montserrat',
+      fontWeight: 'Medium'
     }
   },
 
@@ -127,7 +130,7 @@ const styles = {
     display: 'flex',
     mt: ['40px'],
     mb: ['80px'],
-    fontSize: ['30px']
+    fontSize: ['16px']
   }
 
 

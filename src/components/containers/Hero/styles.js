@@ -15,28 +15,45 @@ const styles = {
 
         h1: {
             fontFamily: 'Bangers',
-            fontSize: ['46px', '46px','46px', '53px'],
-            // fontWeight: '900',
+            fontSize: ['36px', '36px','46px', '53px'],
+            fontWeight: 'lighter',
             textTransform: 'uppercase',
             // letterSpacing: '-2px',
             position: 'relative',
          
             bottom: ['25px'],
-            lineHeight: ['60px'],
+            lineHeight: ['43px'],
 
         },
 
         h2: {
             fontFamily: 'Lobster',
-            bottom: ['15px'],
+            bottom: ['8px'],
             position: 'relative',
-            fontSize: ['24px', '16px', '16px', '20px'],
+            fontSize: ['16px', '16px', '16px', '20px'],
             // fontWeight: 'bold',
             color: '#313638'
         
             
         }
 
+    },
+
+    heroImage: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+
+
+        Image: {
+            width: [
+                '60%'
+            ],
+
+            height: [
+                '60%',
+            ]
+        }
     }
 }
 

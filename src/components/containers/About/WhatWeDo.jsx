@@ -61,20 +61,115 @@ const WhatWeDo = () => {
 <Text as='h1'>We Do</Text>
       </Box>
 
-      <Box sx={styles.iconContainer}>
-      {data.map((item, index) => (
-        <Box key={item.id} sx={styles.icons} margin={['30px']}>
-         <Icon 
-         as={item.icon} 
-         color='white'
-         fontSize={['80px']}
-         />
-         <Text as='h3'>
-          {item.title}
-         </Text>
-          </Box>
-      ))}
-      </Box>
+      <div
+      className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+    >
+      <div className="flex items-start gap-4">
+        <span className="p-4 bg-red-500 rounded-lg shrink-0">
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+            <path
+              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+            ></path>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+            ></path>
+          </svg>
+        </span>
+
+        <div>
+          <h2 className="text-lg font-bold">Graphic Design</h2>
+
+          <p className="mt-1 text-sm text-gray-300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            cumque tempore est ab possimus quisquam reiciendis tempora animi!
+            Quaerat, saepe?
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-start gap-4">
+      <span className="p-4 bg-red-500 rounded-lg shrink-0">
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+            <path
+              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+            ></path>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+            ></path>
+          </svg>
+        </span>
+
+        <div>
+          <h2 className="text-lg font-bold">Website & App Development</h2>
+
+          <p className="mt-1 text-sm text-gray-300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            cumque tempore est ab possimus quisquam reiciendis tempora animi!
+            Quaerat, saepe?
+          </p>
+        </div>
+      </div>
+
+      <div className="flex items-start gap-4">
+        <span className="p-4 bg-red-500 rounded-lg shrink-0">
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+            <path
+              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+            ></path>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+            ></path>
+          </svg>
+        </span>
+
+        <div>
+          <h2 className="text-lg font-bold">SEO Services</h2>
+
+          <p className="mt-1 text-sm text-gray-300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            cumque tempore est ab possimus quisquam reiciendis tempora animi!
+            Quaerat, saepe?
+          </p>
+        </div>
+      </div>
+
+  
+
+  
+
+     
+    </div>
+
 
 
 
@@ -110,6 +205,7 @@ Looking to take your business to the next level? Consider leveraging the power o
       transform: 'rotateX(20deg)', 
       boxShadow: '4px 8px 24px rgba(0,0,0,.3)',
       borderRadius: '20px',
+
       transition: '.24s',
       
     }}
@@ -124,7 +220,7 @@ flexDirection='row'
 alignItems='center'
 justifyContent='center'
 mt={['64px']}
-fontSize='20px'
+fontSize='14px'
 fontFamily='Montserrat'
 fontWeight='medium'
 >
@@ -164,14 +260,14 @@ const styles = {
     h1: {
       fontFamily: 'Bebas Neue',
       textAlign: 'left',
-      lineHeight: ['60px'],
-      fontSize: ['73px'],
+      lineHeight: ['38px'],
+      fontSize: ['44px'],
     },
 
   },
 
   iconContainer: {
-    bg: '#E04C4C',
+    // bg: '#2C2C2C',
     width: '100%',
     padding: ['25px'],
     borderRadius: '20px',
@@ -184,6 +280,10 @@ const styles = {
     alignItems: 'center',
     // flex: ['6'],
     
+
+    p: {
+fontSize: ['14px']
+    },
 
 
     h3: {
@@ -230,7 +330,7 @@ const styles = {
             mt: ['30px'],
             mb: '40px',
       textAlign: 'left',
-      fontSize: ['20px'],
+      fontSize: ['14px'],
       fontFamily: 'Montserrat',
       fontWeight: 'medium',
           },
