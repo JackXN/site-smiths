@@ -22,8 +22,8 @@ const DesktopNav = () => {
   return (
   <Flex sx={styles.container}>
     <Flex sx={styles.leftContainer}>
-    <Image src={Logo} alt='Site Smiths Logo' />
-    <Text as='h3'>Site Smiths</Text>
+    {/* <Image src={Logo} alt='Site Smiths Logo' />
+    <Text as='h3'>Site Smiths</Text> */}
     </Flex>
 
 
