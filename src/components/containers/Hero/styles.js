@@ -6,22 +6,28 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        top: '125px',
+        top: ['150px', '150px'],
         // background: 'red !important'
         
 
 
-
+span: {
+    background: '#E04C4C',
+    color: '#FFF',
+    padding: ['8px 19px'],
+    boxShadow: '3px 4px 0px rgba(0,0,0,0.12)'
+},
 
         h1: {
             fontFamily: 'Bangers',
-            fontSize: ['53px', '48px','46px', '53px'],
+            fontSize: ['48px', '58px'],
             // textTransform: 'uppercase',
             letterSpacing: '4px',
             position: 'relative',
          fontWeight: 'lighter',
             // bottom: ['25px'],
-            lineHeight: ['55px'],
+            lineHeight: ['65px', '82px'],
+            textShadow: '3px 3px 0px rgba(0,0,0,0.2)'
 
         },
 
@@ -46,13 +52,8 @@ const styles = {
 
 
         Image: {
-            width: [
-                '60%'
-            ],
-
-            height: [
-                '60%',
-            ]
+            width: ['60%', '30px'],
+            height: ['60%', '40px']
         }
     }
 }
