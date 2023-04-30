@@ -93,7 +93,7 @@ return (
           aria-label="Toggle navigation"
           color="black"
           background="none"
-          transition="all 0.3s ease-in-out"
+          transition="all 0.5s ease-in-out"
           _hover={{ transform: "scale(1.1)" }}
           onClick={() => setShow(!show)}
           fontSize="25px"

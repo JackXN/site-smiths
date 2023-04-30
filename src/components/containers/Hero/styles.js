@@ -6,7 +6,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        top: ['150px', '150px'],
+        top: ['100px', '150px'],
         // background: 'red !important'
         
 
@@ -20,13 +20,13 @@ span: {
 
         h1: {
             fontFamily: 'Bangers',
-            fontSize: ['48px', '58px'],
+            fontSize: ['42px', '58px'],
             // textTransform: 'uppercase',
             letterSpacing: '4px',
             position: 'relative',
          fontWeight: 'lighter',
             // bottom: ['25px'],
-            lineHeight: ['65px', '82px'],
+            lineHeight: ['54px', '82px'],
             textShadow: '3px 3px 0px rgba(0,0,0,0.2)'
 
         },
@@ -51,10 +51,10 @@ span: {
         alignItems: 'center',
 
 
-        Image: {
-            width: ['60%', '30px'],
-            height: ['60%', '40px']
-        }
+        // Image: {
+        //     width: ['30%', '30px'],
+        //     height: ['30%', '40px']
+        // }
     }
 }
 
