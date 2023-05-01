@@ -22,7 +22,7 @@ span: {
             fontFamily: 'Bangers',
             fontSize: ['42px', '58px'],
             // textTransform: 'uppercase',
-            letterSpacing: '4px',
+            letterSpacing: '0px',
             position: 'relative',
          fontWeight: 'lighter',
             // bottom: ['25px'],
