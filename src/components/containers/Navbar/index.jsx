@@ -116,15 +116,19 @@ return (
         finalFocusRef={null}
       >
         <DrawerOverlay />
-        <DrawerContent bg='brand.secondary'>
-          <DrawerCloseButton />
+        <DrawerContent bg='#E04C4C'>
+          <DrawerCloseButton color='white' />
           <DrawerBody
             display="flex"
             flexDirection="column"
             fontSize={"35px"}
             padding={"30px"}
             margin={"30px"}
-            color="brand.primary"
+            color='white'
+            bg='#E04C4C'
+            borderRadius='20px'
+            fontFamily='bangers'
+            
           >
             <Link activeClass="active"
               to="home"
