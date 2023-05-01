@@ -37,7 +37,7 @@ span: {
             position: 'relative',
             fontSize: ['22px', '22px', '16px', '20px'],
             fontWeight: 'bold',
-            color: '#313638',
+            color: '#504F50',
             mb: ['85px'],
         
             

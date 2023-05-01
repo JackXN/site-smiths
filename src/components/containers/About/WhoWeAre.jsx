@@ -17,8 +17,7 @@ const WhoWeAre = () => {
     <Box sx={styles.container}>
     <Box sx={styles.leftContainer}>
       <hr/>
-    <Text as='h1' color='black'>Who <br/> We Are <IconButton icon={<Image src={Logo} />} bg='none' /></Text>
-  
+    <Text as='h1' color='#504F50'>Who <br/> We Are <IconButton icon={<Image src={Logo} />} bg='none' /></Text>
     </Box>
 
 
@@ -100,6 +99,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    color: '#504F50',
     // pt: ['30px'],
     
 

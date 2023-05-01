@@ -9,6 +9,7 @@ module.exports = {
 fontFamily: {
   'Mont': ['Montserrat'],
   'Bebas': ['Bebas Neue'],
+  'Rale': ['raleway']
 }
 
 

@@ -61,10 +61,19 @@ const WhatWeDo = () => {
 <Text as='h1'>We Do</Text>
       </Box>
 
+
+      <Box sx={styles.paragraph} mb='30px'>
+        <Text as='p'>
+        Our mission is to create a better digital world and make our customers happy.
+We possess a winning combination of creative, technical and people skills that not only make us fun to work with, but ensure we get the job done, and done well.
+        </Text>
+      </Box>
+
+
       <div
-      className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+      className="grid grid-cols-1 gap-8 mt-10 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3 "
     >
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-4 rounded-lg border-3">
         <span className="p-4 bg-red-500 rounded-lg shrink-0">
           <svg
             className="w-5 h-5"
@@ -87,12 +96,10 @@ const WhatWeDo = () => {
         </span>
 
         <div>
-          <h2 className="text-lg font-bold">Graphic Design</h2>
+          <h2 className="text-lg font-bold font-Rale">Graphic Design</h2>
 
-          <p className="mt-1 text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            cumque tempore est ab possimus quisquam reiciendis tempora animi!
-            Quaerat, saepe?
+          <p className="mt-1 text-sm text-gray-700 font-Mont">
+   Our graphic design services can help elevate your brand with creative and impactful designs. From logos and branding to marketing materials and website design.
           </p>
         </div>
       </div>
@@ -120,12 +127,11 @@ const WhatWeDo = () => {
         </span>
 
         <div>
-          <h2 className="text-lg font-bold">Website & App Development</h2>
+          <h2 className="text-lg font-bold font-Rale">Website & App Development</h2>
 
-          <p className="mt-1 text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            cumque tempore est ab possimus quisquam reiciendis tempora animi!
-            Quaerat, saepe?
+          <p className="mt-1 text-sm text-gray-700 font-Mont">
+            
+Looking to take your business to the next level with a custom website or app? Our expert team of developers can help you create a high-quality digital experience that engages your target audience and drives results.
           </p>
         </div>
       </div>
@@ -153,12 +159,10 @@ const WhatWeDo = () => {
         </span>
 
         <div>
-          <h2 className="text-lg font-bold">SEO Services</h2>
+          <h2 className="text-lg font-bold font-Rale">SEO Services</h2>
 
-          <p className="mt-1 text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            cumque tempore est ab possimus quisquam reiciendis tempora animi!
-            Quaerat, saepe?
+          <p className="mt-1 text-sm text-gray-700">
+          Are you struggling to get your website noticed in search engine results? Our SEO services can help you improve your websites visibility and drive more traffic to your site. 
           </p>
         </div>
       </div>
@@ -182,7 +186,7 @@ const WhatWeDo = () => {
   <Box sx={styles.header}>
 <hr/>
     <h1>Elevate Your business
-With a professional
+With a <span >professional</span>
 Online presence</h1>
   </Box>
 </Box>
@@ -220,12 +224,19 @@ flexDirection='row'
 alignItems='center'
 justifyContent='center'
 mt={['64px']}
-fontSize='14px'
+fontSize='20px'
 fontFamily='Merriweather'
 fontWeight='medium'
 >
-<Text as='p' mr='10px'><Link href='/Gallery'>Check Out Some Of Our Work </Link></Text>
-<RightArrow />
+<Text as='p' mr='10px'><Link href='/Gallery'
+fontFamily='Bangers'
+fontSize={['24px']}
+bg='#E04C4C'
+padding='10px'
+color='white'
+boxShadow='10px 10px rgba(0,0,0,0.2)'
+>Check Out Some Of Our Work </Link></Text>
+<RightArrow/>
 </Box>
 </Box>
 
@@ -242,7 +253,8 @@ const styles = {
     display: 'flex',
     flexDirection: ['column'],
     justifyContent: 'center',
-    mb: ['500px'],
+    mt: ['160px']
+    // mb: ['500px'],
   },
 
   header: {
@@ -260,8 +272,9 @@ const styles = {
     h1: {
       fontFamily: 'Bangers',
       textAlign: 'left',
-      lineHeight: ['38px'],
+      lineHeight: ['54px'],
       fontSize: ['44px'],
+      color: '#504F50'
     },
 
   },
@@ -282,7 +295,8 @@ const styles = {
     
 
     p: {
-fontSize: ['14px']
+fontSize: ['14px'],
+fontFamily: 'Merriweather'
     },
 
 
@@ -298,6 +312,15 @@ fontSize: ['14px']
     icons: {
       margin: ['50px']
       
+    }
+  },
+
+  rightContainer: {
+    span: {
+      background: '#E04C4C',
+      color: '#FFF',
+      padding: ['8px 19px'],
+      boxShadow: '3px 4px 0px rgba(0,0,0,0.12)'
     }
   },
 
@@ -342,6 +365,15 @@ fontSize: ['14px']
           mt: ['40px'],
           mb: ['80px'],
           fontSize: ['30px']        }
+        },
+
+
+        paragraph: {
+          mt: ['30px'],
+          textAlign: 'left',
+          fontSize: ['14px'],
+          fontFamily: 'Merriweather',
+          fontWeight: 'Medium'
         }
         }
 

@@ -26,7 +26,7 @@ Crafting Beautiful <br/> Websites That <span>Inspire</span> <br/> & Convert
   />
   
 </Box>
-<Text as='h2'>{hero[1].title}</Text>
+<Text as='h2' >{hero[1].title}</Text>
 </Box>
   )
 }
