@@ -11,7 +11,8 @@ const Btn = (props, color,margin, padding) => {
     bg={props.color ? props.color : '#EF4444'} 
     borderRadius='5'
     fontFamily='Montserrat'
-    fontSize={['14px', '16px']}
+    fontWeight='black'
+    fontSize={['14px', '14px', '16px']}
     padding={props.padding ? props.padding : '15px 15px'}
     color='#ffff'
     mb={props.margin}
