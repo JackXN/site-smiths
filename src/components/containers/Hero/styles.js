@@ -15,7 +15,8 @@ span: {
     background: '#E04C4C',
     color: '#FFF',
     padding: ['8px 19px'],
-    boxShadow: '3px 4px 0px rgba(0,0,0,0.12)'
+    boxShadow: '3px 4px 0px rgba(0,0,0,0.12)',
+   
 },
 
         h1: {
@@ -27,7 +28,7 @@ span: {
          fontWeight: 'lighter',
             // bottom: ['25px'],
             lineHeight: ['54px', '82px'],
-            textShadow: '3px 3px 0px rgba(0,0,0,0.2)'
+             // textShadow: '3px 3px 0px rgba(0,0,0,0.2)'
 
         },
 
