@@ -63,7 +63,7 @@ import {
   
   const Testimonials = () => {
     return (
-      <Container maxW="5xl" py={10} px={6} bg={useColorModeValue('gray.200', 'gray.600')} mt={['400px']}>
+      <Container maxW="5xl" py={10} px={6} bg="#E04C4C" borderRadius='20px' mt={['400px']}>
         <Flex justify="center" mb={8}>
           <chakra.h3 fontSize="3xl" fontWeight="bold" mb={3} textAlign="center">
             What people are saying about Us
