@@ -21,7 +21,7 @@ const Headline = () => {
   
   
   className='text-left uppercase leading-11 '>Working With <br/> Us Is <span style={{background:'#E04C4C',paddingLeft: '10px', color: 'white'}}>Simple.</span></Text>
-  <Text as='p' align={'left'} mt='50px'className='text-5xl font-Bebas leading-11' >This Is How It Goes<span style={{paddingLeft: '10px'}}>...</span></Text>
+  <Text as='p' align={'left'} mt='50px'className='text-2xl font-Bebas leading-11' >This Is How It Goes<span style={{paddingLeft: '10px'}}>...</span></Text>
   </Box>
   </Box>
   )

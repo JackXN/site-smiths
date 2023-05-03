@@ -7,7 +7,7 @@ function Stepper() {
 <Headline/>
 
 
-<section className="max-w-5xl py-40 mx-auto">
+<section className="max-w-5xl py-20 mx-auto">
    <div>
       <div className="flex flex-row">
          <div className="flex-col items-center hidden md:flex">

@@ -172,7 +172,21 @@ Looking to take your business to the next level with a custom website or app? Ou
   
 
      
+
+
+
+
+
+
+
+
     </div>
+
+
+
+      <Box>
+      </Box>
+
 
 
 
@@ -183,7 +197,7 @@ Looking to take your business to the next level with a custom website or app? Ou
 
 
 <Box sx={styles.rightContainer}>
-  <Box sx={styles.header}>
+  <Box sx={styles.headerTwo}>
 <hr/>
     <h1>Elevate Your business
 With a <span >professional</span>
@@ -235,12 +249,11 @@ bg='#E04C4C'
 padding='10px'
 color='white'
 boxShadow='10px 10px rgba(0,0,0,0.2)'
+
 >Check Out Some Of Our Work </Link></Text>
 <RightArrow/>
 </Box>
 </Box>
-
-
       </Box>
     </Box>
   )
@@ -258,7 +271,7 @@ const styles = {
   },
 
   header: {
-    // mt: ['200px'],
+    // mt: ['200px'], 
 // flex: 2,
     hr: {
       width: ['20%', '15%', '10%', '10%'],
@@ -272,11 +285,22 @@ const styles = {
     h1: {
       fontFamily: 'Bangers',
       textAlign: 'left',
-      lineHeight: ['54px'],
+      lineHeight: ['37px'],
       fontSize: ['44px'],
       color: '#504F50'
     },
 
+  },
+
+
+  headerTwo: {
+    h1: {
+      fontFamily: 'Bangers',
+      textAlign: 'left',
+      lineHeight: ['54px'],
+      fontSize: ['44px'],
+      color: '#504F50'
+    },
   },
 
   iconContainer: {

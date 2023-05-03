@@ -15,7 +15,20 @@ const HomeSection = () => {
     <Box sx={styles.container}>
         <Box sx={styles.leftContainer}>
             <Box>
-            <Text as='h1'  >We Ensure Safe And Secure Products For Every Customer</Text>
+            <Text as='h1'  >We Ensure <span
+              
+            
+            
+            >Safe</span> And <span
+             style={{
+                background: '#E04C4C',
+                color: '#FFFF',
+                padding: '6px 5px',
+                boxShadow: '3px 4px 0px rgba(0,0,0,0.12)'
+             }}
+            
+            
+            >Secure</span> Products For Every Customer</Text>
             </Box>
             <Text as='p'>
             Our website design and development business takes the security of our clients’ data and our own systems very seriously. This cybersecurity policy outlines the measures we have implemented to protect our business and our clients from cyber threats.

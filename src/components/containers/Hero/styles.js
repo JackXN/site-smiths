@@ -40,8 +40,6 @@ span: {
             fontWeight: 'bold',
             color: '#504F50',
             mb: ['85px'],
-        
-            
         }
 
     },
