@@ -1,12 +1,16 @@
-import { BsTwitter as Twitter } from "react-icons/bs";
-
+// !! icons
 import {
   RiDiscordLine as Discord,
   RiMailLine as Mail,
   RiPhoneLine as Phone
 } from "react-icons/ri";
 
-const FooterData = [
+
+
+
+
+
+const Footerdata = [
   {
     id: 2,
     category: "important",
@@ -88,4 +92,4 @@ const FooterData = [
   }
 ];
 
-export default FooterData;
+export default Footerdata;

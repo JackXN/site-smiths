@@ -8,9 +8,9 @@ UnorderedList,
 ListItem,
 } from '@chakra-ui/react';
 
-import Data from './Data';
-import styles from './styles';
 import FooterData from './Data';
+import styles from './styles';
+
 
 
 

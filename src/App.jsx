@@ -14,7 +14,8 @@ import Stepper from './components/Stepper';
 import CyberSec from './components/containers/CyberSec/HomeSection';
 import Testimonials from './components/Testimonials';
 import Testimonial from './components/Testimonial';
-import Footer from './components/containers/Footer/Footer';
+// import Footer from './components/containers/Footer/Footer';
+import ContactForm from './components/containers/ContactForm/ContactForm';
 import './App.css'
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
     <Stepper/>
     <CyberSec/>
     <Testimonial/>
-    <Footer/>
+    <ContactForm/>
+    
 
     
 
