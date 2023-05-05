@@ -68,7 +68,7 @@ const WhatWeDo = () => {
 
 <Box>
   
-        <img src='/Test.png'  style={{justifySelf:'flex-end',  mt:'20px', mb:'20px', height:['20%','20%','20%', '20%', '90%'] , position:[null, null, null, 'relative'],
+        <img src='/Test.png'  style={{justifySelf:'flex-end',  marginTop:'20px', marginBottom:'20px', height:['20%','20%','20%', '20%', '90%'] , position:[null, null, null, 'relative'],
         top:'50'}}/>
             <Text as='p' mr='10px'><Link href='/Gallery'
     fontFamily='Bangers'
