@@ -24,7 +24,7 @@ function App() {
     <>
     
     <Navbar/>
-    <Box boxShadow='2xl' padding='50px'>
+    <Box boxShadow='2xl' padding='50px' overflowX='none'>
     <DesktopNav/>
     <Hero/>
   
