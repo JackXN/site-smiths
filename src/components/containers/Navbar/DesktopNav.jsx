@@ -23,8 +23,8 @@ const DesktopNav = () => {
   <Flex sx={styles.container}>
     <Flex sx={styles.leftContainer}>
     <Image src={Logo} alt='Site Smiths Logo' 
-    height={['50%']}
-    width={['50%']}
+    height={['50%','50%','50%','70%']}
+    // width={['50%','50%','50%','20%']}
     />
     {/* <Text as='h3'>Site Smiths</Text> */}
     </Flex>
@@ -40,7 +40,7 @@ const DesktopNav = () => {
         <ListItem mr='20px' padding='10px 8px'>Contact</ListItem>
         <ListItem mr='20px' padding='10px 8px'>Gallery</ListItem>
         <ListItem mr='20px' padding='10px 8px'>FAQ</ListItem>
-        <ListItem><Text bg='brand.secondary' color='#ffff' padding='10px 8px' >Get A Quote</Text></ListItem>
+        <ListItem><Text bg='#E04C4C' color='#ffff' padding='10px 8px' >Get A Quote</Text></ListItem>
         
     </List>
 </Flex>
