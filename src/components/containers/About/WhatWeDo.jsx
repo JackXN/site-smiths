@@ -1,226 +1,192 @@
-import React from 'react';
+import React from "react";
 
 import {
-    Box,
-    Text,
-    Image,
-    Icon,
-    Link,
-    IconButton,
-    SimpleGrid,
-     Grid,
-     GridItem
-} from '@chakra-ui/react';
-import Tilt from 'react-parallax-tilt';
-import Button from '../../Button';
-
-
+  Box,
+  Text,
+  Image,
+  Icon,
+  Link,
+  IconButton,
+  SimpleGrid,
+  Grid,
+  GridItem
+} from "@chakra-ui/react";
+import Tilt from "react-parallax-tilt";
+import Button from "../../Button";
 
 // Move all imports into constant files
 
-import { SiAltiumdesigner as DesignIcon} from 'react-icons/si';
-import {TbSeo as Seo} from 'react-icons/tb';
-import {BsCodeSlash as Code} from 'react-icons/bs'
-import {BiBookContent as CMS} from 'react-icons/bi';
-import {AiOutlineArrowRight as RightArrow} from 'react-icons/ai';
-
-
-
-
+import { SiAltiumdesigner as DesignIcon } from "react-icons/si";
+import { TbSeo as Seo } from "react-icons/tb";
+import { BsCodeSlash as Code } from "react-icons/bs";
+import { BiBookContent as CMS } from "react-icons/bi";
+import { AiOutlineArrowRight as RightArrow } from "react-icons/ai";
 
 const data = [
   {
     id: 1,
-    title: 'Graphic Design',
+    label: "Graphic Design",
     icon: DesignIcon,
-    description: ''
+    description: "Our graphic design crew is dedicated to bringing a simplistic and sexy look to your website. Chasing that exact feel that your business is looking for. Schedule with us today"
   },
 
   {
     id: 2,
-    title: 'SEO Services',
+    label: "SEO Services",
     icon: Seo,
-    description: 'test'
+    description: "Our team of developers specialize in search engine optimization. We understand the importance of getting your business as many visitors as it can. That is why we are dedicated to bringing you the best SEO services."
   },
-{
-  id: 3,
-  title: 'Coding Services',
-  icon: Code,
-  description: 'test'
-},
-{
-  id: 4,
-  title: 'Content Management Systems',
-  icon: CMS,
-  description: 'test'
-}
+  {
+    id: 3,
+    label: "Coding Services",
+    icon: Code,
+    description: "Whatever you need, whether its for personal use or use in your business, we got you covered with services that range from web development to app development. Whatever need you have, we have someone to cover it."
+  },
+  {
+    id: 4,
+    label: "Content Management Systems",
+    icon: CMS,
+    description: "All of our websites have the option to integrate Content management systems. Which means you as a customer can login to a user friendly dashboard and customize whatever content on the site that you want. Making it easy to make changes whenever you need to"
+  }
 ];
-
 
 const WhatWeDo = () => {
   return (
     <Box sx={styles.container}>
-      <Box sx={styles.header} >
-<hr/>
-<Text as='h1'>What</Text>
-<Text as='h1'>We Do</Text>
-      </Box>
-      <Box sx={styles.paragraph} mb='30px'>
-        <Text as='p'>
-        Our mission is to create a better digital world and make our customers happy.
-We possess a winning combination of creative, technical and people skills that not only make us fun to work with, but ensure we get the job done, and done well.
+      <Box sx={styles.leftContainer}>
+        <hr />
+        <Text as="h1" color="#504F50">
+          What <br /> We Do <IconButton bg="none" />
         </Text>
+
+
+        <Image src='/Test.png' alignSelf='flex-end' justifySelf='flex-end'  mt='20px' mb='20px' height={['20%','20%', '50%']} position={[null, null, null, 'relative']}
+        top='26%'/>
       </Box>
-      <Box>
+
+      <Box sx={styles.rightContainer}>
+        <Box sx={styles.contentContainer}>
+          <Box sx={styles.paragraph}>
+            <Text as="p" mb='40px'>
+              Our mission is to create a better digital world and make our
+              customers happy. We possess a winning combination of creative,
+              technical and people skills that not only make us fun to work
+              with, but ensure we get the job done, and done well.
+            </Text>
+          </Box>
+
+
+<Box display='flex' flexWrap='wrap'>
+{data.map((item, index) => (
+  <Box key={index} 
+  display='flex'
+  justifyContent='center'
+  alignItems='center'
+  textAlign='center'
+  bg='#E04C4C' 
+  boxShadow='lg'
+  borderRadius='lg'
+  margin='20px'
+  padding='10px'
+  >
+
+<Box display='flex'
+justifyContent='center'
+alignItems='center'
+flexDirection='column'
+>
+<IconButton icon={<item.icon/>} bg='none' fontSize='40px' color='white'/>
+<Text as='h3' fontFamily='Montserrat' fontWeight='bold' fontSize='18px' color='white'>{item.label}</Text>
+<Text as='p' paddingLeft={['50px ']} Right={['50px']} color='white' fontFamily='Merriweather' fontWeight='bold' position='relative' bottom='17px'>{item.description}</Text>
+</Box>
+    </Box>
+))}
+
+
+</Box>
+
+
+
+
+          <Box sx={styles.buttonContainer}>
+            <Button text="Read More" />
+          </Box>
+        </Box>
       </Box>
     </Box>
-  )
-}
-
-
+  );
+};
 
 const styles = {
   container: {
-    display: 'flex',
-    flexDirection: ['column', 'column', 'column', 'column' ,'column' , 'row'],
-
-    justifyContent: 'center',
-    mt: ['160px']
-    // mb: ['500px'],
+    display: "flex",
+    flexDirection: ["column", "column", "column", "column", "column", "row"],
+    textAlign: "left"
   },
-
-  header: {
-    // mt: ['200px'], 
-    display: 'flex',
+  leftContainer: {
+    display: "flex",
     // justifyContent: 'center',
-    alignItems: [null,null,null,null,null,'center'],
-   flexDirection: 'column',
-   textAlign: 'left',
-    flex: 2,
+    alignItems: [null, null, null, null, null, "center"],
+    flex: ["1"],
 
+    flexDirection: "column",
+
+    h1: {
+      fontFamily: "Bangers",
+      textAlign: "left",
+      lineHeight: ["30px"],
+      fontSize: ["44px"],
+      fontWeight: "lighter"
+    },
 
     hr: {
-      width: ['20%', '15%', '10%', '10%'],
-      background: '#E04C4C',
-      height: '5px',
-      mb: ['20px'],
+      width: ["20%", "15%", "10%", "10%"],
+      background: "#E04C4C",
+      height: "5px",
+      mb: ["20px"],
       // position: ['relative'],
-      right: ['68px','68px','78px', '60px' ],
-    },
-
-    h1: {
-      fontFamily: 'Bangers',
-      textAlign: 'left',
-      lineHeight: ['37px'],
-      fontSize: ['44px'],
-      color: '#504F50'
-    },
-
-  },
-
-
-  headerTwo: {
-    h1: {
-      fontFamily: 'Bangers',
-      textAlign: 'left',
-      lineHeight: ['54px'],
-      fontSize: ['44px'],
-      color: '#504F50'
-    },
-  },
-
-  iconContainer: {
-    // bg: '#2C2C2C',
-    width: '100%',
-    padding: ['25px'],
-    borderRadius: '20px',
-    mt: ['50px'],
-    display: 'flex',
-    flexWrap: 'wrap',
-    flexDirection: ['column', 'row'],
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    // flex: ['6'],
-    
-
-    p: {
-fontSize: ['14px'],
-fontFamily: 'Merriweather'
-    },
-
-
-    h3: {
-      fontSize: ['23px'],
-      color: '#EDF2F7',
-      mt: ['16px'],
-      fontFamily: 'Roboto',
-      fontWeight: 'bold'
-    },
-
-
-    icons: {
-      margin: ['50px']
-      
+      right: ["68px", "68px", "78px", "60px"]
     }
   },
 
   rightContainer: {
-    
-    
-    span: {
-      background: '#E04C4C',
-      color: '#FFF',
-      padding: ['8px 19px'],
-      boxShadow: '3px 4px 0px rgba(0,0,0,0.12)'
+    flex: ["1"]
+  },
+
+  titleContainer: {
+    // display: 'flex',
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "#504F50",
+    // pt: ['30px'],
+
+    h2: {
+      fontSize: ["29px"],
+      textAlign: "left !important",
+      lineHeight: ["35px"]
+    }
+  },
+  contentContainer: {
+    mt: ["20px"],
+
+    p: {
+      mt: ["30px"],
+      textAlign: "left",
+      fontSize: ["14px"],
+      fontFamily: "Merriweather",
+      fontWeight: "Medium"
     }
   },
 
+  buttonContainer: {
+    justifyContent: "left",
+    alignSelf: "left",
+    display: "flex",
+    mt: ["40px"],
+    mb: ["80px"],
+    fontSize: ["16px"]
+  }
+};
 
-  showcaseContainer: {
-    mt: ['150px'],
-    display: 'flex',
-    // flexDirection: ['column-reverse'],
-    flexDirection: ['column']
-
-  },
-
-  leftContainer: {
-    position: 'relative',
-    top: ['150px']
-        },
-
-
-        infoContainer: {
-          
-
-          p: {
-            mt: ['30px'],
-            mb: '40px',
-      textAlign: 'left',
-      fontSize: ['14px'],
-      fontFamily: 'Merriweather',
-      fontWeight: 'medium',
-          },
-
-          buttonContainer: {
-          justifyContent: 'left',
-          alignSelf: 'left',
-          display: 'flex',
-          mt: ['40px'],
-          mb: ['80px'],
-          fontSize: ['30px']        }
-        },
-
-
-        paragraph: {
-          mt: ['30px'],
-          textAlign: 'left',
-          fontSize: ['14px'],
-          fontFamily: 'Merriweather',
-          fontWeight: 'Medium',
-          flex: 2
-        }
-        }
-
-export default WhatWeDo
+export default WhatWeDo;
