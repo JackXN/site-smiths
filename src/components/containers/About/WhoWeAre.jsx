@@ -73,26 +73,32 @@ const styles = {
     flexDirection: 'column',
 
     h1: {
-      fontFamily: 'Bangers',
-      textAlign: 'left',
-      lineHeight: ['30px'],
-      fontSize: ['44px'],
-      fontWeight: 'lighter'
+      fontFamily: "Bangers",
+      textAlign: "left",
+      lineHeight: ["30px","30px","30px",],
+      fontSize: ["44px", '44px', '44px', '44px'],
+      fontWeight: "lighter",
+      position:[null,null,null,null,'relative'],
+      top: [null,null,null,null,'90px', '150px']
     },
 
     hr: {
-      width: ['20%', '15%', '10%', '10%'],
-      background: '#E04C4C',
-      height: '5px',
-      mb: ['20px'],
-      // position: ['relative'],
-      right: ['68px','68px','78px', '60px' ],
+      width: ["20%", "15%", "10%", "10%"],
+      background: "#E04C4C",
+      height: "5px",
+      mb: ["20px"],
+      position:[null,null,null,null,'relative'],
+      right: ["68px", "68px", "78px", "40px"],
+      top: [null,null,null,null,'90px', '150px']
+      
     }
   },
 
 
   rightContainer: {
     flex: ['1'],
+    position:[null,null,null,null,'relative'],
+    top: [null,null,null,null,'90px', '150px']
   },
 
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import {
   Box,
@@ -9,8 +9,10 @@ import {
   IconButton,
   SimpleGrid,
   Grid,
-  GridItem
+  GridItem,
+  Wrap, WrapItem
 } from "@chakra-ui/react";
+
 import Tilt from "react-parallax-tilt";
 import Button from "../../Button";
 
@@ -46,23 +48,42 @@ const data = [
     id: 4,
     label: "Content Management Systems",
     icon: CMS,
-    description: "All of our websites have the option to integrate Content management systems. Which means you as a customer can login to a user friendly dashboard and customize whatever content on the site that you want. Making it easy to make changes whenever you need to"
+    description: "All of our websites have the option to integrate Content management systems. Which means you as a customer can login to a user friendly dashboard and customize whatever content on the site that you want. Making it easy to make changes whenever you need to",
+    isMovable: true
   }
 ];
 
 const WhatWeDo = () => {
+
+
+
+
   return (
-    <Box sx={styles.container}>
+    <Box sx={styles.container} >
       <Box sx={styles.leftContainer}>
         <hr />
         <Text as="h1" color="#504F50">
           What <br /> We Do <IconButton bg="none" />
         </Text>
 
-
-        <Image src='/Test.png' alignSelf='flex-end' justifySelf='flex-end'  mt='20px' mb='20px' height={['20%','20%', '50%']} position={[null, null, null, 'relative']}
-        top='26%'/>
+<Box>
+  
+        <Image src='/Test.png'  justifySelf='flex-end'  mt='20px' mb='20px' height={['20%','20%', '90%']} position={[null, null, null, 'relative']}
+        top='32%'/>
+            <Text as='p' mr='10px'><Link href='/Gallery'
+    fontFamily='Bangers'
+    fontSize={['24px']}
+    bg='#E04C4C'
+    padding='10px'
+    color='white'
+    boxShadow='10px 10px rgba(0,0,0,0.2)'
+    position={[null,null,null,'relative']}
+    top='200px'
+    
+    >Get In Touch To Learn More </Link></Text>
+     </Box>  
       </Box>
+           
 
       <Box sx={styles.rightContainer}>
         <Box sx={styles.contentContainer}>
@@ -76,8 +97,11 @@ const WhatWeDo = () => {
           </Box>
 
 
-<Box display='flex' flexWrap='wrap'>
+<Box display='flex' flexWrap='wrap' >
+  <Wrap justify='center'>
 {data.map((item, index) => (
+  <WrapItem key={index} position={item.isMovable ? [null,null,null,null,'relative'] : 'static' }   right={item.isMovable ? ['px'] : 'auto'} zIndex='10'>
+  
   <Box key={index} 
   display='flex'
   justifyContent='center'
@@ -88,20 +112,26 @@ const WhatWeDo = () => {
   borderRadius='lg'
   margin='20px'
   padding='10px'
+  
   >
 
 <Box display='flex'
 justifyContent='center'
 alignItems='center'
 flexDirection='column'
+flexWrap='wrap'
 >
 <IconButton icon={<item.icon/>} bg='none' fontSize='40px' color='white'/>
 <Text as='h3' fontFamily='Montserrat' fontWeight='bold' fontSize='18px' color='white'>{item.label}</Text>
 <Text as='p' paddingLeft={['50px ']} Right={['50px']} color='white' fontFamily='Merriweather' fontWeight='bold' position='relative' bottom='17px'>{item.description}</Text>
 </Box>
-    </Box>
-))}
 
+    </Box>
+    </WrapItem>
+    
+    
+))}
+</Wrap>
 
 </Box>
 
@@ -109,7 +139,7 @@ flexDirection='column'
 
 
           <Box sx={styles.buttonContainer}>
-            <Button text="Read More" />
+            {/* <Button text="Read More" /> */}
           </Box>
         </Box>
       </Box>
@@ -128,15 +158,18 @@ const styles = {
     // justifyContent: 'center',
     alignItems: [null, null, null, null, null, "center"],
     flex: ["1"],
+    zIndex: '0',
 
     flexDirection: "column",
 
     h1: {
       fontFamily: "Bangers",
       textAlign: "left",
-      lineHeight: ["30px"],
-      fontSize: ["44px"],
-      fontWeight: "lighter"
+      lineHeight: ["30px","30px","30px",],
+      fontSize: ["44px", '44px', '44px', '44px'],
+      fontWeight: "lighter",
+      position:[null,null,null,null,'relative'],
+      top: [null,null,null,null,'90px', '150px']
     },
 
     hr: {
@@ -144,13 +177,17 @@ const styles = {
       background: "#E04C4C",
       height: "5px",
       mb: ["20px"],
-      // position: ['relative'],
-      right: ["68px", "68px", "78px", "60px"]
+      position:[null,null,null,null,'relative'],
+      right: ["68px", "68px", "78px", "40px"],
+      top: [null,null,null,null,'90px', '150px']
+      
     }
   },
 
   rightContainer: {
-    flex: ["1"]
+    flex: ["1"],
+    position:[null,null,null,null,'relative'],
+    top: [null,null,null,null,'90px', '150px']
   },
 
   titleContainer: {

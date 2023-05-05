@@ -34,6 +34,18 @@
 }
 
 
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* background: #EDF2F7 !important; */
+  background-color: #EDF2F7 !important;
+  
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

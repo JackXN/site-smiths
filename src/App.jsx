@@ -22,21 +22,23 @@ function App() {
   
   return (
     <>
-    <Box>
+    
     <Navbar/>
+    <Box boxShadow='2xl' padding='50px'>
     <DesktopNav/>
     <Hero/>
+  
     <About/>
     <Stepper/>
     <CyberSec/>
     <Testimonial/>
     <ContactForm/>
-    
-
-    
-
-
     </Box>
+
+    
+
+
+    
     
     </>
   )
