@@ -5,10 +5,15 @@ import {
     Text,
     Image,
     Icon,
-    Link
+    Link,
+    IconButton,
+    SimpleGrid,
+     Grid,
+     GridItem
 } from '@chakra-ui/react';
 import Tilt from 'react-parallax-tilt';
 import Button from '../../Button';
+
 
 
 // Move all imports into constant files
@@ -35,19 +40,19 @@ const data = [
     id: 2,
     title: 'SEO Services',
     icon: Seo,
-    description: ''
+    description: 'test'
   },
 {
   id: 3,
   title: 'Coding Services',
   icon: Code,
-  description: ''
+  description: 'test'
 },
 {
   id: 4,
   title: 'Content Management Systems',
   icon: CMS,
-  description: ''
+  description: 'test'
 }
 ];
 
@@ -55,205 +60,18 @@ const data = [
 const WhatWeDo = () => {
   return (
     <Box sx={styles.container}>
-      <Box sx={styles.header}>
+      <Box sx={styles.header} >
 <hr/>
 <Text as='h1'>What</Text>
 <Text as='h1'>We Do</Text>
       </Box>
-
-
       <Box sx={styles.paragraph} mb='30px'>
         <Text as='p'>
         Our mission is to create a better digital world and make our customers happy.
 We possess a winning combination of creative, technical and people skills that not only make us fun to work with, but ensure we get the job done, and done well.
         </Text>
       </Box>
-
-
-      <div
-      className="grid grid-cols-1 gap-8 mt-10 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3 "
-    >
-      <div className="flex items-start gap-4 rounded-lg border-3">
-        <span className="p-4 bg-red-500 rounded-lg shrink-0">
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="white"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-            <path
-              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-            ></path>
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-            ></path>
-          </svg>
-        </span>
-
-        <div>
-          <h2 className="text-lg font-bold font-Rale">Graphic Design</h2>
-
-          <p className="mt-1 text-sm text-gray-700 font-Mont">
-   Our graphic design services can help elevate your brand with creative and impactful designs. From logos and branding to marketing materials and website design.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex items-start gap-4">
-      <span className="p-4 bg-red-500 rounded-lg shrink-0">
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="white"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-            <path
-              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-            ></path>
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-            ></path>
-          </svg>
-        </span>
-
-        <div>
-          <h2 className="text-lg font-bold font-Rale">Website & App Development</h2>
-
-          <p className="mt-1 text-sm text-gray-700 font-Mont">
-            
-Looking to take your business to the next level with a custom website or app? Our expert team of developers can help you create a high-quality digital experience that engages your target audience and drives results.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex items-start gap-4">
-        <span className="p-4 bg-red-500 rounded-lg shrink-0">
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="white"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-            <path
-              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-            ></path>
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-            ></path>
-          </svg>
-        </span>
-
-        <div>
-          <h2 className="text-lg font-bold font-Rale">SEO Services</h2>
-
-          <p className="mt-1 text-sm text-gray-700">
-          Are you struggling to get your website noticed in search engine results? Our SEO services can help you improve your websites visibility and drive more traffic to your site. 
-          </p>
-        </div>
-      </div>
-
-  
-
-  
-
-     
-
-
-
-
-
-
-
-
-    </div>
-
-
-
       <Box>
-      </Box>
-
-
-
-
-
-      <Box sx={styles.showcaseContainer}>
-<Box sx={styles.leftContainer}>
-
-
-
-<Box sx={styles.rightContainer}>
-  <Box sx={styles.headerTwo}>
-<hr/>
-    <h1>Elevate Your business
-With a <span >professional</span>
-Online presence</h1>
-  </Box>
-</Box>
-
-
-<Box sx={styles.infoContainer}>
-    <Text as='p'>
-Looking to take your business to the next level? Consider leveraging the power of a professional online service. With the right partner, you can optimize your digital presence, streamline your operations, and connect with customers like never before. Whether youre a startup looking to establish a foothold or an established business seeking to expand, theres never been a better time to elevate your brand and grow your bottom line with a professional online service. So what are you waiting for? Explore your options today and take your business to new heights!
-    </Text>
-    <Box sx={styles.buttonContainer}>
-<Button text='Read More'/>
-</Box>
-  </Box>
-
-
-
-  
-    <figure className='overflow-y-auto overflow-x-hidden h-[550px] w-full lg:max-w-lg mx-auto relative no-scrollbar header-img mt-10'
-    style={{
-      transform: 'rotateX(20deg)', 
-      boxShadow: '4px 8px 24px rgba(0,0,0,.3)',
-      borderRadius: '20px',
-
-      transition: '.24s',
-      
-    }}
-  
-    >
-  <Image src='/showcaseImage.png' alt='project Showcase'   borderRadius='20px'/>
-  </figure>
-
-<Box
-display='flex'
-flexDirection='row'
-alignItems='center'
-justifyContent='center'
-mt={['64px']}
-fontSize='20px'
-fontFamily='Merriweather'
-fontWeight='medium'
->
-<Text as='p' mr='10px'><Link href='/Gallery'
-fontFamily='Bangers'
-fontSize={['24px']}
-bg='#E04C4C'
-padding='10px'
-color='white'
-boxShadow='10px 10px rgba(0,0,0,0.2)'
-
->Check Out Some Of Our Work </Link></Text>
-<RightArrow/>
-</Box>
-</Box>
       </Box>
     </Box>
   )
@@ -264,7 +82,8 @@ boxShadow='10px 10px rgba(0,0,0,0.2)'
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: ['column'],
+    flexDirection: ['column', 'column', 'column', 'column' ,'column' , 'row'],
+
     justifyContent: 'center',
     mt: ['160px']
     // mb: ['500px'],
@@ -272,7 +91,14 @@ const styles = {
 
   header: {
     // mt: ['200px'], 
-// flex: 2,
+    display: 'flex',
+    // justifyContent: 'center',
+    alignItems: [null,null,null,null,null,'center'],
+   flexDirection: 'column',
+   textAlign: 'left',
+    flex: 2,
+
+
     hr: {
       width: ['20%', '15%', '10%', '10%'],
       background: '#E04C4C',
@@ -340,6 +166,8 @@ fontFamily: 'Merriweather'
   },
 
   rightContainer: {
+    
+    
     span: {
       background: '#E04C4C',
       color: '#FFF',
@@ -347,13 +175,6 @@ fontFamily: 'Merriweather'
       boxShadow: '3px 4px 0px rgba(0,0,0,0.12)'
     }
   },
-
-
-
-
-
-
-  
 
 
   showcaseContainer: {
@@ -397,7 +218,8 @@ fontFamily: 'Merriweather'
           textAlign: 'left',
           fontSize: ['14px'],
           fontFamily: 'Merriweather',
-          fontWeight: 'Medium'
+          fontWeight: 'Medium',
+          flex: 2
         }
         }
 

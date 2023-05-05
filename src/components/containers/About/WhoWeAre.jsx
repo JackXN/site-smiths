@@ -17,7 +17,7 @@ const WhoWeAre = () => {
     <Box sx={styles.container}>
     <Box sx={styles.leftContainer}>
       <hr/>
-    <Text as='h1' color='#504F50'>Who <br/> We Are <IconButton icon={<Image src={Logo} />} bg='none' /></Text>
+    <Text as='h1' color='#504F50'>Who <br/> We Are <IconButton bg='none' /></Text>
     </Box>
 
 
@@ -61,12 +61,14 @@ We possess a winning combination of creative, technical and people skills that n
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: ['column']
+    flexDirection: ['column', 'column', 'column', 'column' ,'column' , 'row'],
+    textAlign: 'left',
   },
   leftContainer: {
     display: 'flex',
     // justifyContent: 'center',
-    // alignItems: 'center',
+    alignItems: [null,null,null,null,null,'center'],
+    flex: ['1'],
 
     flexDirection: 'column',
 
@@ -90,7 +92,7 @@ const styles = {
 
 
   rightContainer: {
-   
+    flex: ['1'],
   },
 
 

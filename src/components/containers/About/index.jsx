@@ -7,12 +7,14 @@ import {
 import styles from './styles';
 import WhoWeAre from './WhoWeAre';
 import WhatWeDo from './WhatWeDo';
+import Presence from './Presence';
 
 const index = () => {
   return (
     <Box sx={styles.container}>
 <WhoWeAre/>
 <WhatWeDo/>
+<Presence/>
     </Box>
   )
 }

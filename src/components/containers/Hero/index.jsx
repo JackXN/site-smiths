@@ -20,8 +20,10 @@ Crafting Beautiful <br/> Websites That <span>Inspire</span> <br/> & Convert
 <Box sx={styles.heroImage}>
   <Image src={AnvilLogo} alt='Site-Smiths-Anvil-Logo' 
   
-  height={['64%']}
-  width={['64%']}
+  
+  
+  height={['64%','64%','25%','25%','25%' ]}
+  width={['64%','64%','35%','35%','35%' ]}
   
   />
   
