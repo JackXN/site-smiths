@@ -8,6 +8,8 @@ import {
     IconButton
 } from '@chakra-ui/react';
 
+import Span from './Highlighter';
+
 
 const Headline = () => {
   return (
@@ -20,7 +22,8 @@ const Headline = () => {
   fontWeight='lighter'
   
   
-  className='text-left uppercase leading-11 '>Working With <br/> Us Is <span style={{background:'#E04C4C',paddingLeft: '10px', color: 'white'}}>Simple.</span></Text>
+  
+  className='text-left uppercase leading-11 '>Working With <br/> Us Is <Span text='simple'/></Text>
   <Text as='p' align={'left'} mt='50px'className='text-2xl font-Bebas leading-11' >This Is How It Goes<span style={{paddingLeft: '10px'}}>...</span></Text>
   </Box>
   </Box>
