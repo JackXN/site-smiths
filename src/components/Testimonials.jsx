@@ -84,12 +84,12 @@ import {
                 rounded="md"
                 p={6}
                 pos="relative"
-                bg={useColorModeValue('white', 'gray.800')}
+                
                 _after={{
                   content: `""`,
                   w: '0',
                   h: '0',
-                  borderColor: `transparent ${useColorModeValue('white', '#1a202c')} transparent`,
+                 
                   borderStyle: 'solid',
                   borderWidth: '10px 0 10px 10px',
                   position: 'absolute',

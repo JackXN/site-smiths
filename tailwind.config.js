@@ -9,7 +9,12 @@ module.exports = {
 fontFamily: {
   'Mont': ['Montserrat'],
   'Bebas': ['Bebas Neue'],
-  'Rale': ['raleway']
+  'Rale': ['raleway'],
+  'Bang': ['Bangers']
+},
+
+colors: {
+  'blue': '#EDF2F7'
 }
 
 
