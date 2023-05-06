@@ -8,6 +8,8 @@ import styles from './styles';
 import WhoWeAre from './WhoWeAre';
 import WhatWeDo from './WhatWeDo';
 import Presence from './Presence';
+import Stepper from '../../Stepper';
+
 
 const index = () => {
   return (

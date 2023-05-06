@@ -27,7 +27,7 @@ import { AiOutlineArrowRight as RightArrow } from "react-icons/ai";
 const data = [
   {
     id: 1,
-    label: "Graphic Design",
+    label: "Graphic Design & Branding",
     icon: DesignIcon,
     description: "Our graphic design crew is dedicated to bringing a simplistic and sexy look to your website. Chasing that exact feel that your business is looking for. Schedule with us today"
   },
@@ -46,7 +46,7 @@ const data = [
   },
   {
     id: 4,
-    label: "Content Management Systems",
+    label: "Web Hosting",
     icon: CMS,
     description: "All of our websites have the option to integrate Content management systems. Which means you as a customer can login to a user friendly dashboard and customize whatever content on the site that you want. Making it easy to make changes whenever you need to",
     isMovable: true
@@ -66,11 +66,11 @@ const WhatWeDo = () => {
           What <br /> We Do <IconButton bg="none" />
         </Text>
 
-<Box>
+<Box position={[null,null,null,'relative']} top='150px'>
   
-        <img src='/Test.png'  style={{justifySelf:'flex-end',  marginTop:'20px', marginBottom:'20px', height:['20%','20%','20%', '20%', '90%'] , position:[null, null, null, 'relative'],
-        top:'50'}}/>
-            <Text as='p' mr='10px'><Link href='/Gallery'
+        <img src='/Test.png'  style={{justifySelf:'flex-end',  marginTop:'20px', height:['20%','20%','20%', '20%', '90%'] , position:[null, null, null, 'relative'],
+        top:'50px',}}/>
+            <Text as='p' mr='10px'     mt='25px'><Link href='/Gallery'
     fontFamily='Bangers'
     fontSize={['24px']}
     bg='#E04C4C'
@@ -78,7 +78,8 @@ const WhatWeDo = () => {
     color='white'
     boxShadow='10px 10px rgba(0,0,0,0.2)'
     position={[null,null,null,'relative']}
-    top='200px'
+
+   top='50px'
     
     >Get In Touch To Learn More </Link></Text>
      </Box>  
@@ -87,20 +88,13 @@ const WhatWeDo = () => {
 
       <Box sx={styles.rightContainer}>
         <Box sx={styles.contentContainer}>
-          <Box sx={styles.paragraph}>
-            <Text as="p" mb='40px'>
-              Our mission is to create a better digital world and make our
-              customers happy. We possess a winning combination of creative,
-              technical and people skills that not only make us fun to work
-              with, but ensure we get the job done, and done well.
-            </Text>
-          </Box>
+       
 
 
 <Box display='flex' flexWrap='wrap' >
   <Wrap justify='center'>
 {data.map((item, index) => (
-  <WrapItem key={index} position={item.isMovable ? [null,null,null,null,'relative'] : 'static' }   right={item.isMovable ? ['px'] : 'auto'} zIndex='10'>
+  <WrapItem  key={index} position={item.isMovable ? [null,null,null,null,'relative'] : 'static' }   right={item.isMovable ? ['px'] : 'auto'} zIndex='10'>
   
   <Box key={index} 
   display='flex'
@@ -109,10 +103,9 @@ const WhatWeDo = () => {
   textAlign='center'
   bg='#E04C4C' 
   boxShadow='lg'
-  borderRadius='lg'
+  borderRadius='3xl'
   margin='20px'
   padding='10px'
-  
   >
 
 <Box display='flex'
@@ -120,9 +113,15 @@ justifyContent='center'
 alignItems='center'
 flexDirection='column'
 flexWrap='wrap'
+height='100%'
+position='relative'
+
 >
-<IconButton icon={<item.icon/>} bg='none' fontSize='40px' color='white'/>
-<Text as='h3' fontFamily='Montserrat' fontWeight='bold' fontSize='18px' color='white'>{item.label}</Text>
+<IconButton icon={<item.icon/>} bg='none' fontSize='43px' color='white' mb='15px' mt='15px' 
+
+
+/>
+<Text as='h3' fontFamily='Montserrat' fontWeight='bold' fontSize='20px' color='white'>{item.label}</Text>
 <Text as='p' paddingLeft={['50px ']} Right={['50px']} color='white' fontFamily='Merriweather' fontWeight='bold' position='relative' bottom='17px'>{item.description}</Text>
 </Box>
 

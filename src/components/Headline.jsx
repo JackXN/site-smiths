@@ -14,8 +14,8 @@ import Span from './Highlighter';
 const Headline = () => {
   return (
     <Box sx={styles.container}>
-    <Box sx={styles.leftContainer}>
-  <Text as='h1' color='black'
+    <Box sx={styles.leftContainer} >
+  <Text as='h1' color='#504F50'
   fontSize={['44px']}
   fontFamily='Bangers'
   lineHeight={['47px']}
@@ -23,7 +23,7 @@ const Headline = () => {
   
   
   
-  className='text-left uppercase leading-11 '>Working With <br/> Us Is <Span text='simple'/></Text>
+  className='text-left uppercase '>Working With <br/> Us Is <Span text='simple'/></Text>
   <Text as='p' align={'left'} mt='50px'className='text-2xl font-Bebas leading-11' >This Is How It Goes<span style={{paddingLeft: '10px'}}>...</span></Text>
   </Box>
   </Box>

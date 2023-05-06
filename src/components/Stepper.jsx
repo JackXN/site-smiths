@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 import Headline from "./Headline";
 function Stepper() {
   return (
-    <Box pt={['250px']}>
+    <Box pt={['150px', '150px','150px', '100px']} >
 <Headline/>
 
 
@@ -24,7 +24,7 @@ function Stepper() {
             <div className="flex flex-col items-center md:flex-row">
                <div className="flex-auto ">
                   <div className="pt-3 pl-3 text-sm font-normal text-gray-500 uppercase md:hidden"><span className="font-black">Step 1</span> - Brief</div>
-                  <div className="p-3 text-4xl font-medium text-gray-700 font-Bebas ">Discuss your best idea</div>
+                  <div className="p-3 text-xl font-medium text-gray-700 font-Bebas ">Discuss your best idea</div>
                   <div className="px-3 pb-6 font-medium font-Mont" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
                </div>
 
@@ -65,8 +65,8 @@ function Stepper() {
             <div className="flex flex-col items-center md:flex-row">
                <div className="flex-auto">
                   {/* <div className="pt-3 pl-3 text-sm font-normal text-gray-500 uppercase md:hidden"><span className="font-black">Step 2</span> - Collaboration</div> */}
-                  <div className="p-3 text-4xl font-medium text-gray-700 font-Bebas ">Find your team and collaborate</div>
-                  <div className="px-3 pb-6 font-medium font-Mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                  <div className="p-3 text-xl font-medium text-gray-700 font-Bebas ">Find your team and collaborate</div>
+                  <div className="px-3 pb-6 text-sm font-medium font-Mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
                </div>
 
 
@@ -98,8 +98,8 @@ function Stepper() {
             <div className="flex flex-col items-center md:flex-row">
                <div className="flex-auto">
                   <div className="pt-3 pl-3 text-sm font-normal text-gray-500 uppercase md:hidden"><span className="font-black">Step 3</span> - Planification</div>
-                  <div className="p-3 text-4xl font-medium text-gray-700 font-Bebas">Make a good plan and prepare tasks</div>
-                  <div className="px-3 pb-6 font-medium font-Mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                  <div className="p-3 text-xl font-medium text-gray-700 font-Bebas">Make a good plan and prepare tasks</div>
+                  <div className="px-3 pb-6 text-sm font-medium font-Mont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
                </div>
                
             </div>
@@ -125,8 +125,8 @@ function Stepper() {
             <div className="flex flex-col items-center md:flex-row">
                <div className="flex-auto">
                   <div className="pt-3 pl-3 text-sm font-normal text-gray-500 uppercase md:hidden"><span className="font-black">Step 4</span> - Implementation</div>
-                  <div className="p-3 text-4xl font-medium text-gray-700 font-Bebas">Execute, impletement your solution</div>
-                  <div className="px-3 pb-6 font-medium font-Mont" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                  <div className="p-3 text-xl font-medium text-gray-700 font-Bebas">Execute, impletement your solution</div>
+                  <div className="px-3 pb-6 text-sm font-sm font-Mont " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
                </div>
                
             </div>

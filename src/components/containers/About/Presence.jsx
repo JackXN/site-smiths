@@ -25,15 +25,16 @@ const Presence = () => {
             So what are you waiting for? Explore your options today and take
             your business to new heights!
           </Text>
-          <Box sx={styles.buttonContainer}>
+        
+        </Box>
+        <Box sx={styles.buttonContainer}>
             <Button text="Read More" />
           </Box>
-        </Box>
         </Box>
 <Box sx={styles.leftContainer}>
 
         <figure
-          className="overflow-y-auto overflow-x-hidden h-[550px] w-full lg:max-w-lg mx-auto relative no-scrollbar header-img mt-10"
+          className="overflow-y-auto overflow-x-hidden h-[550px] w-full lg:max-w-lg mx-auto relative scrollbar-hide header-img mt-10"
           style={{
             transform: "rotateX(20deg)",
             boxShadow: "4px 8px 24px rgba(0,0,0,.3)",
@@ -60,6 +61,10 @@ const Presence = () => {
           fontFamily="Merriweather"
           fontWeight="medium"
         >
+
+          <Text as='p'>
+
+          </Text>
           <Text as="p" mr="10px">
             <Link
               href="/Gallery"
@@ -108,12 +113,10 @@ const styles = {
     },
 
     buttonContainer: {
-      justifyContent: "left",
-      alignSelf: "left",
-      display: "flex",
       mt: ["40px"],
       mb: ["80px"],
-      fontSize: ["30px"]
+      fontSize: ["30px"],
+      
     }
   },
 
@@ -132,7 +135,8 @@ const styles = {
       textAlign: "left",
       lineHeight: ["50px", "50px", "50px"],
       fontSize: ["44px", "44px", "44px", "44px"],
-      fontWeight: "lighter"
+      fontWeight: "lighter",
+      color: '#504F50'
     },
     hr: {
       width: ["20%", "15%", "10%", "10%"],

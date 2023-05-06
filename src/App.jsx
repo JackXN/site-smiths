@@ -24,13 +24,12 @@ function App() {
     <>
     
     <Navbar/>
-    <Box boxShadow='2xl' padding='18px' >
+    <Box >
     <DesktopNav/>
     <Hero/>
-  
     <About/>
-    <Stepper/>
     <CyberSec/>
+    <Stepper/>
     <Testimonial/>
     <ContactForm/>
     </Box>

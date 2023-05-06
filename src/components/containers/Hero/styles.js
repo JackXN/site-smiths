@@ -2,7 +2,7 @@ const styles = {
     container: {
         height: '100%',
         display: 'flex',
-        flexDirection:' column',
+        flexDirection:[' column'],
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
@@ -21,7 +21,7 @@ span: {
 
         h1: {
             fontFamily: 'Bangers',
-            fontSize: ['42px', '58px'],
+            fontSize: ['42px', '58px', '58px', '58px', '68px'],
             // textTransform: 'uppercase',
             letterSpacing: '0px',
             position: 'relative',
@@ -36,7 +36,7 @@ span: {
             fontFamily: 'Lobster, cursive',
         top: ['40px'],
             position: 'relative',
-            fontSize: ['22px', '22px', '16px', '20px'],
+            fontSize: ['22px', '22px', '16px', '19px'],
             fontWeight: 'bold',
             color: '#504F50',
             mb: ['85px'],

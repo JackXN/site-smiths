@@ -16,9 +16,6 @@ const HomeSection = () => {
         <Box sx={styles.leftContainer}>
             <Box>
             <Text as='h1'  >We Ensure <span
-              
-            
-            
             >Safe</span> And <span
              style={{
                 background: '#E04C4C',
@@ -34,15 +31,15 @@ const HomeSection = () => {
             Our website design and development business takes the security of our clients’ data and our own systems very seriously. This cybersecurity policy outlines the measures we have implemented to protect our business and our clients from cyber threats.
             </Text>
 
-            
+        
         </Box>
-        <img src={Gif}/>
-        <Btn text='See Our Cyber-Sec Policy'  padding='20px 25px'/>
+      
 
 
-        <Box sx={styles.rightContainer} mt={['30px']}>
-            {/* <Btn text='See Our Cyber-Sec Policy'/> */}
-{/* <img src={Gif}/> */}
+        <Box sx={styles.rightContainer} mt={['30px']} display='flex' flexDirection='column' jusitfyContent='center' alignItems='center'>
+            
+     <img src={Gif}/>
+     <Btn text='See Our Cyber-Sec Policy'  padding='20px 25px'/>
 </Box>
 </Box>
 </>
@@ -56,9 +53,9 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: ['column'],
+        flexDirection: ['column', 'column', 'column', 'row'],
         height: '100vh',
-        mt: ['200px'],
+        // mt: ['200px', '200px', '200px', '200px', null],
         
         
     },
@@ -68,6 +65,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        flex: 2,
 
         h1: {
             fontFamily: 'Bangers',
@@ -89,7 +87,7 @@ const styles = {
 
     rightContainer: {
         display: 'flex',
-
+        flex:2,
     }
 }
 
