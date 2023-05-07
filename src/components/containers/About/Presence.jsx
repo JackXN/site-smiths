@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Link, Image } from "@chakra-ui/react";
-import Button from "../../Button";
+import Button from "../../CustomButton";
 import Span from '../../Highlighter';
 const Presence = () => {
   return (
@@ -28,7 +28,7 @@ const Presence = () => {
         
         </Box>
         <Box sx={styles.buttonContainer}>
-            <Button text="Read More" />
+            <Button text="Read More"  />
           </Box>
         </Box>
 <Box sx={styles.leftContainer}>

@@ -6,7 +6,7 @@ import {
     Image
 } from '@chakra-ui/react';
 import Gif from '/src/giphy.gif';
-import Btn from '../../Button';
+import Btn from '../../CustomButton';
 
 
 const HomeSection = () => {
@@ -30,8 +30,6 @@ const HomeSection = () => {
             <Text as='p'>
             Our website design and development business takes the security of our clients’ data and our own systems very seriously. This cybersecurity policy outlines the measures we have implemented to protect our business and our clients from cyber threats.
             </Text>
-
-        
         </Box>
       
 
@@ -56,8 +54,6 @@ const styles = {
         flexDirection: ['column', 'column', 'column', 'row'],
         height: '100vh',
         // mt: ['200px', '200px', '200px', '200px', null],
-        
-        
     },
 
 

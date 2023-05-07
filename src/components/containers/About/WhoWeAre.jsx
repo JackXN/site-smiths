@@ -6,10 +6,9 @@ import {
     IconButton,
   } from '@chakra-ui/react';
 
+import Span from '../../Highlighter'
+  import Button from '../../CustomButton';
 
-  import Btn from '../../Button';
-import Logo from '/smallLogo.png';
-// import About from '../../../constants/index';
 
 
 const WhoWeAre = () => {
@@ -35,7 +34,7 @@ const WhoWeAre = () => {
         fontFamily='Lobster, cursive'
         lineHeight='40px'
         >
-          Beautiful User Experience
+          <span style={{color: '#E04C4C'}}>Beautiful</span> User Experience
         </Text>
       </Box>
 
@@ -53,7 +52,7 @@ We possess a winning combination of creative, technical and people skills that n
 
 
 <Box sx={styles.buttonContainer}>
-<Btn text='Read More' />
+<Button text='Read More' isSecondary={true} />
 </Box>
       </Box>
     </Box>

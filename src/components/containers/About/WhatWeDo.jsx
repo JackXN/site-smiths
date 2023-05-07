@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 import Tilt from "react-parallax-tilt";
-import Button from "../../Button";
+import Button from "../../CustomButton";
 
 // Move all imports into constant files
 
@@ -70,6 +70,9 @@ const WhatWeDo = () => {
   
         <img src='/Test.png'  style={{justifySelf:'flex-end',  marginTop:'20px', height:['20%','20%','20%', '20%', '90%'] , position:[null, null, null, 'relative'],
         top:'50px',}}/>
+
+
+
             <Text as='p' mr='10px'     mt='25px'><Link href='/Gallery'
     fontFamily='Bangers'
     fontSize={['24px']}
@@ -78,10 +81,13 @@ const WhatWeDo = () => {
     color='white'
     boxShadow='10px 10px rgba(0,0,0,0.2)'
     position={[null,null,null,'relative']}
-
    top='50px'
     
     >Get In Touch To Learn More </Link></Text>
+
+
+
+
      </Box>  
       </Box>
            

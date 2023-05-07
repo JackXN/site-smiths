@@ -12,7 +12,7 @@ import {
     
 } from '@chakra-ui/react';
 
-import Button from '../../Button';
+import Button from '../../CustomButton';
 
 // !! Update Component Later
 // import Input from './Input'

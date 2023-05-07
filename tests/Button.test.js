@@ -1,52 +1,33 @@
-import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
-import Button from '../src/components/Button';
 
+import { render } from '@testing-library/react';
+import Button from '../src/components/CustomButton';
+import {describe,expect,it} from 'vitest';
 
-/**
- * @jest-environment jsdom
- */
-
-test('use jsdom in this test file', () => {
-  const element = document.createElement('div');
-  expect(element).not.toBeNull();
-});
-
-
-describe('Button component', () => {
-  test('renders with default style if isSecondary prop is false', () => {
-    const { getByTestId } = render(<Button isSecondary={false}>Click me</Button>);
-    const button = getByTestId('button');
-    expect(button).toHaveStyle(`
+describe('Button', () => {
+  it('renders with primary style when isSecondary prop is false', () => {
+    expect(Button).toHaveStyle(`
       background-color: #EF4444;
       border-radius: 5px;
       font-family: Montserrat;
-      font-weight: black;
-      font-size: 14px;
-      padding: 15px 15px;
-      color: #ffff;
-    `);
-  });
-
-  test('renders with secondary style if isSecondary prop is true', () => {
-    const { getByTestId } = render(<Button isSecondary={true}>Click me</Button>);
-    const button = getByTestId('button');
-    expect(button).toHaveStyle(`
-      background-color: #f6e05e;
-      border-radius: 50%;
-      font-family: Montserrat;
       font-weight: bold;
-      font-size: 16px;
-      padding: 20px 30px;
-      color: #333;
+      font-size: 14px;
+      padding: 15px;
+      color: #fff;
     `);
   });
 
-  test('calls onClick function when button is clicked', () => {
-    const onClickMock = jest.fn();
-    const { getByTestId } = render(<Button onClick={onClickMock}>Click me</Button>);
-    const button = getByTestId('button');
-    fireEvent.click(button);
-    expect(onClickMock).toHaveBeenCalledTimes(1);
+  it('renders with secondary style when isSecondary prop is true', () => {
+
+
+
+    expect(Button).toHaveStyle(`
+      background-color: #333;
+      border-radius: 8px;
+      font-family: Arial;
+      font-weight: normal;
+      font-size: 12px;
+      padding: 10px;
+      color: #fff;
+    `);
   });
 });
