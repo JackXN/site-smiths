@@ -16,15 +16,7 @@ import {
 } from "@chakra-ui/react";
 
 import Tilt from "react-parallax-tilt";
-import Button from "../../CustomButton";
-
-// Move all imports into constant files
-
-import { SiAltiumdesigner as DesignIcon } from "react-icons/si";
-import { TbSeo as Seo } from "react-icons/tb";
-import { BsCodeSlash as Code } from "react-icons/bs";
-import { BiBookContent as CMS } from "react-icons/bi";
-import { AiOutlineArrowRight as RightArrow } from "react-icons/ai";
+import Button from "../../common/CustomButton";
 
 const WhatWeDo = () => {
   return (
@@ -32,7 +24,7 @@ const WhatWeDo = () => {
       <Box sx={styles.leftContainer}>
         <Box position={[null, null, null, "relative"]} top="150px">
           <img
-            src="/Test.png"
+            src="/src/assets/images/SiteSmithMallet.png"
             style={{
               justifySelf: "flex-end",
               marginTop: "20px",

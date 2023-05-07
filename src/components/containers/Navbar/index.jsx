@@ -1,72 +1,58 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import {
-    Box,
-    Flex,
-    Text,
-    IconButton,
-    useDisclosure,
-    Drawer,
-    DrawerBody,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-    useColorMode,
-    Image,
-  } from "@chakra-ui/react";
+  Box,
+  Flex,
+  Text,
+  IconButton,
+  useDisclosure,
+  Drawer,
+  DrawerBody,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useColorMode,
+  Image
+} from "@chakra-ui/react";
 
-  import MySvg from '../../MySvg';
-
-
-import {HamburgerIcon} from '@chakra-ui/icons';
-import * as Scroll from 'react-scroll';
-
-
-
-
+import { HamburgerIcon } from "@chakra-ui/icons";
+import * as Scroll from "react-scroll";
 
 const Navbar = () => {
-    const {isOpen, onOpen, onClose} = useDisclosure();
-    const {colorMode, toggleColorMode} = useColorMode();
-    const [show,setShow] = useState(null);
-    const [scrollPos, setScrollPos] = useState(0);
-    const [bgColor, setBgColor] = useState(null);
-    const [logoColor, setLogoColor] = useState('/Logo.png')
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
+  const [show, setShow] = useState(null);
+  const [scrollPos, setScrollPos] = useState(0);
+  const [bgColor, setBgColor] = useState(null);
+  const [logoColor, setLogoColor] = useState("/Logo.png");
 
-    // OnScroll Function
+  //! OnScroll Function
 
-    useEffect(() => {
-      const handleScroll = () => {
-        setScrollPos(window.pageYOffset);
-      }
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.pageYOffset);
+    };
 
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      }
-    }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-
-    // On scroll also needs to change logo color
-   useEffect(() => {
-    if(scrollPos > 0) {
-      setBgColor('#E04C4C')
-      setLogoColor('/LogoWhite.png')
+  // ! On scroll also needs to change logo color
+  useEffect(() => {
+    if (scrollPos > 0) {
+      setBgColor("#E04C4C");
+      setLogoColor("/LogoWhite.png");
     } else {
-      setBgColor(null)
-      setLogoColor('/Logo.png')
+      setBgColor(null);
+      setLogoColor("/Logo.png");
     }
-   }, [scrollPos])
+  }, [scrollPos]);
 
+  
+  const Link = Scroll.Link;
 
-
-
-
-    // const router = useRouter();
-    const Link = Scroll.Link;
-
-
-return (
-  // <Box bg={bgColor} display='flex' justifyContent='center' alignItems='center' mt={['25px']}  position='sticky'>
+  return (
     <Flex
       as="nav"
       alignItems="center"
@@ -75,21 +61,21 @@ return (
       // padding="1.5rem"
       // bg={colorMode === "light" ? "transparent" : "teal.500"}
       bg={bgColor}
-      padding='20px'
-      borderRadius='20px'
+      padding="20px"
+      borderRadius="20px"
       color="white"
       // position="absolute"
-      position='sticky'
+      position="sticky"
       transition="background-color 0.5s ease-out"
       top={90}
       right={0}
       left={0}
       zIndex={4}
-      display={["flex", "flex", "flex", "flex", "flex", 'none']}
+      display={["flex", "flex", "flex", "flex", "flex", "none"]}
     >
-      <Box display={{ sm: "block",lg:' none' }} onClick={onOpen} >
+      <Box display={{ sm: "block", lg: " none" }} onClick={onOpen}>
         <IconButton
-          icon={<HamburgerIcon/>}
+          icon={<HamburgerIcon />}
           aria-label="Toggle navigation"
           color="black"
           background="none"
@@ -98,14 +84,28 @@ return (
           onClick={() => setShow(!show)}
           fontSize="25px"
           mt="20px"
-          position='relative'
-          bottom={['10px']}
+          position="relative"
+          bottom={["10px"]}
         />
       </Box>
-      <Box display='flex'  flexDirection='row' justifyContent='center' alignItems='center' position='relative'  >
+      <Box
+        display="flex"
+        flexDirection="row"
+        justifyContent="center"
+        alignItems="center"
+        position="relative"
+      >
         {/* <Text as='h1' fontFamily='Bangers' color='black'>ITE <br/> SMITHS</Text> */}
-     <Image src={logoColor} transition='src 0.5s ease-in'alt='Something' height='50%' width='50%' alignSelf='center' position='relative' right={['25px']}/>
-     
+        <Image
+          src={logoColor}
+          transition="src 0.5s ease-in"
+          alt="Something"
+          height="50%"
+          width="50%"
+          alignSelf="center"
+          position="relative"
+          right={["25px"]}
+        />
       </Box>
 
       {/* DRAWER */}
@@ -116,91 +116,92 @@ return (
         finalFocusRef={null}
       >
         <DrawerOverlay />
-        <DrawerContent bg='#E04C4C'>
-          <DrawerCloseButton color='white' />
+        <DrawerContent bg="#E04C4C">
+          <DrawerCloseButton color="white" />
           <DrawerBody
             display="flex"
             flexDirection="column"
             fontSize={"35px"}
             padding={"30px"}
             margin={"30px"}
-            color='white'
-            bg='#E04C4C'
-            borderRadius='20px'
-            fontFamily='bangers'
-            
+            color="white"
+            bg="#E04C4C"
+            borderRadius="20px"
+            fontFamily="bangers"
           >
-            <Link activeClass="active"
+            <Link
+              activeClass="active"
               to="home"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
               cursor="pointer"
-              color='black'>
-              
-           
-                Home
-              
+              color="black"
+            >
+              Home
             </Link>
-            <Link activeClass="active"
+            <Link
+              activeClass="active"
               to="about"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              cursor="pointer">
-              
-                About Us
-              
+              cursor="pointer"
+            >
+              About Us
             </Link>
-            <Link  activeClass="active"
+            <Link
+              activeClass="active"
               to="services"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              cursor="pointer">
-              
-                Services
-              
+              cursor="pointer"
+            >
+              Services
             </Link>
-            <Link activeClass="active"
+            <Link
+              activeClass="active"
               to="contact"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              cursor="pointer">
-              
-                Contact Us
-              
+              cursor="pointer"
+            >
+              Contact Us
             </Link>
-          
-            <Link activeClass="active"
+
+            <Link
+              activeClass="active"
               to="pricing"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              cursor="pointer">
-                Submissions
+              cursor="pointer"
+            >
+              Submissions
             </Link>
-            <Link activeClass="active"
+            <Link
+              activeClass="active"
               to="pricing"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              cursor="pointer">
-                Gallery
+              cursor="pointer"
+            >
+              Gallery
             </Link>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
 
       <Flex align="center">
-        {/* <Image src={Logo} alt='logo' style={{height: '40px', width:'40px',marginTop: '30px'}} /> */}
       </Flex>
       <Box display={{ sm: "block", md: "block" }}>
         <IconButton
@@ -213,16 +214,7 @@ return (
       </Box>
     </Flex>
     // </Box>
-)
-
-
-}
-
-
+  );
+};
 
 export default Navbar;
-
-
-
-
-  

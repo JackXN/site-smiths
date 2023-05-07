@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Text, Link, Image } from "@chakra-ui/react";
-import Button from "../../CustomButton";
-import Span from '../../Highlighter';
-const Presence = () => {
+import Button from "../../common/CustomButton";
+import Span from '../../common/Highlighter';
+
+const ShowCaseSection = () => {
   return (
     <Box sx={styles.showcaseContainer}>
         <Box sx={styles.rightContainer}>
@@ -44,7 +45,7 @@ const Presence = () => {
           }}
         >
           <Image
-            src="/showcaseImage.png"
+            src="/src/assets/images/showcaseImage.png"
             alt="project Showcase"
             borderRadius="20px"
           />
@@ -150,4 +151,4 @@ const styles = {
   }
 };
 
-export default Presence;
+export default ShowCaseSection;

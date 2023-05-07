@@ -7,9 +7,9 @@ import {
 import styles from './styles';
 import WhoWeAre from './WhoWeAre';
 import WhatWeDo from './WhatWeDo';
-import Presence from './Presence';
-import Stepper from '../../Stepper';
-import ServiceDisplay from '../../ServiceDisplay';
+import Presence from './ShowCaseSection';
+import Stepper from '../../common/Stepper';
+import ServiceDisplay from '../../common/ServiceDisplay';
 
 
 const index = () => {
@@ -19,8 +19,6 @@ const index = () => {
 <WhatWeDo/>
 <ServiceDisplay/>
 <Presence/>
-
-
     </Box>
   )
 }
