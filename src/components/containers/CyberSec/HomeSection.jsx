@@ -34,7 +34,7 @@ const HomeSection = () => {
       
 
 
-        <Box sx={styles.rightContainer} mt={['30px']} display='flex' flexDirection='column' jusitfyContent='center' alignItems='center'>
+        <Box sx={styles.rightContainer} mt={['30px']} display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
             
      <img src={Gif}/>
      <Btn text='See Our Cyber-Sec Policy'  padding='20px 25px'/>

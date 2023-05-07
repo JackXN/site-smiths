@@ -39,12 +39,12 @@ const data = [
 const ServiceDisplay = () => {
   return (
   <Box sx={styles.container}>
-{data.map((item, index) => {
-    <Box key={index}>
-
-
+{data.map((item, index) => (
+    <Box key={index} sx={styles.box}>
+        <Text as='h1'>{item.label}</Text>
+        <Text as='p'>{item.description}</Text>
         </Box>
-})}
+))}
 
   </Box>
   )
@@ -54,7 +54,18 @@ const ServiceDisplay = () => {
 
 const styles = {
     container: {
+display: 'flex',
 
+flexDirection: ['column','column','column','column','row'],
+flexWrap: 'wrap',
+justifyContent: 'space-between',
+    },
+
+    box: {
+        background: 'red',
+        color: 'white',
+        margin: '50px',
+        width: '50%'
     }
 }
 export default ServiceDisplay

@@ -9,6 +9,7 @@ import WhoWeAre from './WhoWeAre';
 import WhatWeDo from './WhatWeDo';
 import Presence from './Presence';
 import Stepper from '../../Stepper';
+import ServiceDisplay from '../../ServiceDisplay';
 
 
 const index = () => {
@@ -16,7 +17,9 @@ const index = () => {
     <Box sx={styles.container}>
 <WhoWeAre/>
 <WhatWeDo/>
+<ServiceDisplay/>
 <Presence/>
+
 
     </Box>
   )
