@@ -1,4 +1,5 @@
 import React from 'react';
+import {Box,Text} from '@chakra-ui/react';
 // Move all imports into constant files
 import { SiAltiumdesigner as DesignIcon } from "react-icons/si";
 import { TbSeo as Seo } from "react-icons/tb";
@@ -37,10 +38,23 @@ const data = [
 
 const ServiceDisplay = () => {
   return (
-    <div>
-      
-    </div>
+  <Box sx={styles.container}>
+{data.map((item, index) => {
+    <Box key={index}>
+
+
+        </Box>
+})}
+
+  </Box>
   )
 }
 
+
+
+const styles = {
+    container: {
+
+    }
+}
 export default ServiceDisplay
