@@ -102,7 +102,17 @@ const styles = {
   rightContainer: {
     flex: ['1'],
     position:[null,null,null,null,'relative'],
-    top: [null,null,null,null,'90px', '150px']
+    top: [null,null,null,null,'90px', '150px'],
+
+      h1: {
+      fontFamily: "Bangers",
+      textAlign: "left",
+      lineHeight: ["30px","30px","30px",],
+      fontSize: ["44px", '44px', '44px', '44px'],
+      fontWeight: "lighter",
+      position:[null,null,null,null,'relative'],
+      top: [null,null,null,null,'90px', '150px']
+    },
   },
 
 
