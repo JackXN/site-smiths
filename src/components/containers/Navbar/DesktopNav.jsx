@@ -13,7 +13,7 @@ import {
   Spacer
 } from "@chakra-ui/react";
 
-import Logo from "/src/assets/images/Logo.png";
+// import Logo from "/src/assets/images/Logo.png";
 
 const DesktopNav = () => {
   const Link = Scroll.Link;
@@ -22,7 +22,7 @@ const DesktopNav = () => {
     <Flex sx={styles.container}>
       <Flex sx={styles.leftContainer}>
         <Image
-          src={Logo}
+          src="Logo.png"
           alt="Site Smiths Logo"
           height={["50%", "50%", "50%", "70%"]}
         />

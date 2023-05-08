@@ -12,7 +12,7 @@ import {
     
 } from '@chakra-ui/react';
 
-import Button from '../../CustomButton';
+import CustomButton from '../../common/CustomButton';
 
 // !! Update Component Later
 // import Input from './Input'
@@ -63,7 +63,7 @@ const ContactForm = () => {
 
 
 </Box>
-<Button text='Submit'/>
+<CustomButton text='Submit'/>
 
 </Box>
       

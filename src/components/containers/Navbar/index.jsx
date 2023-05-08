@@ -23,7 +23,7 @@ const Navbar = () => {
   const [show, setShow] = useState(null);
   const [scrollPos, setScrollPos] = useState(0);
   const [bgColor, setBgColor] = useState(null);
-  const [logoColor, setLogoColor] = useState("/Logo.png");
+  const [logoColor, setLogoColor] = useState("./assets/images/Logo.png");
 
   //! OnScroll Function
 

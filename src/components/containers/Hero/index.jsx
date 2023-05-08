@@ -7,8 +7,8 @@ import {
 import styles from './styles';
 import {hero} from '../../../constants/index';
 
-import AnvilLogo from '../../../assets/AnvilLogo.png';
-import Arrow from '../../Arrow';
+import AnvilLogo from '/AnvilLogo.png'
+// import Arrow from '../../Arrow';
 
 
 const index = () => {
@@ -22,14 +22,10 @@ Crafting Beautiful <br/> Websites That <span>Inspire</span> <br/> & Convert
 
 <Box sx={styles.heroImage}>
   <Image src={AnvilLogo} alt='Site-Smiths-Anvil-Logo' 
-  
-
-
-  height={['64%','64%','25%','25%','25%' ]}
+    height={['64%','64%','25%','25%','25%' ]}
   width={['64%','64%','35%','35%','35%' ]}
-  
   />
-    <Arrow/>
+
 
 
 </Box>

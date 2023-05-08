@@ -45,7 +45,7 @@ const ShowCaseSection = () => {
           }}
         >
           <Image
-            src="/src/assets/images/showcaseImage.png"
+            src="/showcaseImage.png"
             alt="project Showcase"
             borderRadius="20px"
           />

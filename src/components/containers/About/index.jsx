@@ -12,7 +12,7 @@ import Stepper from '../../common/Stepper';
 import ServiceDisplay from '../../common/ServiceDisplay';
 
 
-const index = () => {
+export default function About ()  {
   return (
     <Box sx={styles.container}>
 <WhoWeAre/>
@@ -23,4 +23,4 @@ const index = () => {
   )
 }
 
-export default index
+

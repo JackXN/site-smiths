@@ -24,7 +24,7 @@ const WhatWeDo = () => {
       <Box sx={styles.leftContainer}>
         <Box position={[null, null, null, "relative"]} top="150px">
           <img
-            src="/src/assets/images/SiteSmithMallet.png"
+            src="/SiteSmithMallet.png"
             style={{
               justifySelf: "flex-end",
               marginTop: "20px",
