@@ -23,11 +23,4 @@ const about = [
 
 
 
-
-const contactForm = [
-    {
-        
-    }
-]
-
 export default { about };
