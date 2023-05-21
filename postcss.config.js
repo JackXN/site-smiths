@@ -1,6 +1,7 @@
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+module.exports = {
+plugins: [
+'postcss-flexbugs-fixes',
+'postcss-preset-env',
+'tailwindcss',
+],
 }

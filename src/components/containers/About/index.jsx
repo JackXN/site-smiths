@@ -7,14 +7,20 @@ import {
 import styles from './styles';
 import WhoWeAre from './WhoWeAre';
 import WhatWeDo from './WhatWeDo';
+import Presence from './ShowCaseSection';
+import Stepper from '../../common/Stepper';
+import ServiceDisplay from '../../common/ServiceDisplay';
 
-const index = () => {
+
+export default function About ()  {
   return (
     <Box sx={styles.container}>
 <WhoWeAre/>
 <WhatWeDo/>
+{/* <ServiceDisplay/> */}
+<Presence/>
     </Box>
   )
 }
 
-export default index
+
